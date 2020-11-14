@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"type="text/css">
     <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}" type="text/css">
     {% block styles %}
@@ -10,6 +12,34 @@
     <title>Recipe Manager</title>
 </head>
 <body>
+  <header> 
+  <!-- top navbar -->
+   <nav class= "nav-extended text-shadow deep-orange-accent-3">
+    <div class="nav-wrapper">
+    <a href="{{url_for('get_recipes')}}" class="brand-logo">SnixSnax</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class=class="fas fa-bars"></i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="{{url_for('get_recipes')}}">Home</a></li>
+        <li><a href="#">Add A Recipe</a></li>
+        <li><a href="#">Profile</a></li> 
+        <li><a href="#">Log In</a></li>
+        <li><a href="#">Log Out</a></li>
+        <li><a href="#">Register</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+<!-- mobile sidenav -->
+  <ul class="sidenav" id="mobile-demo">
+        <li><h4 class="center-align light-blue-text text-darken-4">SnixSnax</h4>
+        <li><a href="{{url_for('get_recipes')}}">Home</a></li>
+        <li><a href="#">Add A Recipe</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Log In</a></li>
+        <li><a href="#">Log Out</a></li>
+        <li><a href="#">Register</a></li>
+  </ul>
+  </header>
 
     <h1> Base Template Content</h1>
      {% block content %}
