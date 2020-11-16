@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-    <h2>Im extending the base template</h2>
+   
     {% for recipe in recipes %} 
         {{ recipe.recipe_name }}<br>
         {{ recipe.category_name }}<br>
@@ -8,5 +8,20 @@
         {{ recipe.recipe_ingredients }}<br>
         {{ recipe.date_added }}<br>
     {% endfor %}
+
+     <ul class="collapsible">
+    <li>
+      <div class="collapsible-header lime accent-3 text-shadow  "><i class="fas fa-caret-down"></i>First</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header lime accent-3 white-text text-shadow"><i class="fas fa-caret-down"></i>Second</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header lime accent-3 text-shadow"><i class="fas fa-caret-down"></i>Third</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+  </ul>
 
 {% endblock %}    
