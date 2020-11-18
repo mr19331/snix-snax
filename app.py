@@ -133,11 +133,11 @@ def edit_recipe(recipe_id):
         }
         mongo.db.recipes.update({"_id": ObjectId(recipe_id)}, submit)
         flash("Your Recipe has been Succesfully Edited!")
-        
+
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_recipe.html",
-        recipe=recipe, categories=categories)
+             recipe=recipe, categories=categories)
 
 
 if __name__ == "__main__":
