@@ -140,12 +140,17 @@ def edit_recipe(recipe_id):
              recipe=recipe, categories=categories)
 
 
-@app.route("/delete_recipe/<task_id>")
-def delete_recipe(task_id):
+@app.route("/delete_recipe/<recipe_id>")
+def delete_recipe(recipe_id):
     mongo.db.recipes.remove({"_id": ObjectId()})
     flash("Recipe Has Been Deleted")
     return redirect(url_for("get_recipes"))
 
+
+@app.route("/get_categories")
+def get_categories():
+    categories = list(mongo.db.categories.find().sort("category_name", 1))
+    return render_template("categories.html", categories=categories)
 
 
 if __name__ == "__main__":
