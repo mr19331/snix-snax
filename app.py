@@ -94,7 +94,7 @@ def profile(username):
 @app.route("/logout")
 def logout():
     # remove user from session cookies
-    flash("You have been logged out ")
+    flash("You have been logged out")
     session.pop("user")
     return redirect(url_for("login"))
 
@@ -137,12 +137,12 @@ def edit_recipe(recipe_id):
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_recipe.html",
-             recipe=recipe, categories=categories)
+                           recipe=recipe, categories=categories)
 
 
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
-    mongo.db.recipes.remove({"_id": ObjectId()})
+    mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
     flash("Recipe Has Been Deleted")
     return redirect(url_for("get_recipes"))
 
