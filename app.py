@@ -155,7 +155,7 @@ def get_categories():
 
 @app.route("/add_category", methods=["GET", "POST"])
 def add_category():
-    if request.method == "POST": 
+    if request.method == "POST":
         category = {
             "category_name": request.form.get("category_name")
         }
@@ -170,13 +170,21 @@ def add_category():
 def edit_category(category_id):
     if request.method == "POST":
         submit = {
-        "category_name": request.form.get("category_name")
+            "category_name": request.form.get("category_name")
     }
     mongo.db.categories.update({"_id": ObjectId(category_id)}, submit)
     flash("Category Successfully Updated")
     return redirect(url_for("get_categories"))
+
     category = mongo.db.categories.find_one({"_id": ObjectId(category_id)})
     return render_template("edit_category.html", category=category)
+
+
+@app.route("/delete_category<category_id>")
+def delete_category(category_id):
+    mongo.db.categories.remove({"_id": ObjectId(category_id)})
+    flash('Category Deleted Successfully')
+    return redirect(url_for("get_categories"))
 
 
 if __name__ == "__main__":
