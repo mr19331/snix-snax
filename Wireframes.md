@@ -10,7 +10,7 @@
 
 ![Add Recipe Page Desktop ](https://res.cloudinary.com/mr19331/image/upload/v1606134688/Add-Recipe-Page-Desktop_sjbz0c.png)
 
-![Edit Recipe Page ](https://res.cloudinary.com/mr19331/image/upload/v1606134688/Edit-Recipe-Page_Desktop_ybonm5.png)
+![Edit Recipe Page ](https://res.cloudinary.com/mr19331/image/upload/v1606395241/Edit-Recipe-Page-Desktop_bq9ins.png)
 
 ![Admin Profile Page Desktop ](https://res.cloudinary.com/mr19331/image/upload/v1606134688/Admin-Profile-Page-Desktop_btx6vk.png)
 
