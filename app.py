@@ -19,10 +19,10 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
-@app.route("/get_recipes")
-def get_recipes():
+@app.route("/all_recipes")
+def all_recipes():
     recipes = list(mongo.db.recipes.find())
-    return render_template("recipes.html", recipes=recipes)
+    return render_template("all_recipes.html", recipes=recipes)
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -108,12 +108,13 @@ def add_recipe():
             "recipe_description": request.form.get("recipe_description"),
             "recipe_ingredients": request.form.get("recipe_ingredients"),
             "recipe_method": request.form.get("recipe_method"),
+            "recipe_image": request.form.get("recipe_image"),
             "date_added": request.form.get("date_added"),
             "added_by": session["user"]
         }
         mongo.db.recipes.insert_one(recipe)
         flash("Your Recipe has been Succesfully Added!")
-        return redirect(url_for("get_recipes"))
+        return redirect(url_for("all_recipes"))
 
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("add_recipe.html", categories=categories)
@@ -128,6 +129,7 @@ def edit_recipe(recipe_id):
             "recipe_description": request.form.get("recipe_description"),
             "recipe_ingredients": request.form.get("recipe_ingredients"),
             "recipe_method": request.form.get("recipe_method"),
+            "recipe_image": request.form.get("recipe_image"),
             "date_added": request.form.get("date_added"),
             "added_by": session["user"]
         }
@@ -144,7 +146,7 @@ def edit_recipe(recipe_id):
 def delete_recipe(recipe_id):
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
     flash("Recipe Has Been Deleted")
-    return redirect(url_for("get_recipes"))
+    return redirect(url_for("all_recipes"))
 
 
 @app.route("/get_categories")

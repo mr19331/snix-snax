@@ -1,0 +1,41 @@
+{% extends "base.html" %} {% block content %}
+
+
+<h3 class="red-text center-align text-shadow"> Your Recipe Box! </h3>
+<h5 class="grey-text darken-3  center-align"> Click the recipe name for details, don't forget to favourite the recipes you love!</h5>
+
+
+<div class="row"> 
+{% for recipe in recipes %} 
+    <div class="col s12 m3 ">
+      <div class="card  center-align">
+	  <div class= "card-image">
+        <img class="activator" src="{{recipe.recipe_image}}">
+        <a href="#" class="halfway-fab btn-floating pink ">
+		<i class="material-icons">favorite</i></a>		
+	  </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">{{ recipe.recipe_name }}:{{recipe.date_added}}</span>
+		  <p>{{recipe.recipe_description}}</p>
+		  <p><em>added by:{{ recipe.added_by}}</em></p>
+           {% if session.user|lower == recipe.added_by|lower %}		  
+         <p><a href="{{url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn grey darken-2">Edit</a>
+          <a href="{{url_for('delete_recipe', recipe_id=recipe._id) }}" class= "btn red"
+          onclick= "return confirm(' Are you sure you want to delete this recipe?')">
+          Delete</a></p>
+        
+		 {% endif %}
+          </div>
+		<div class="card-reveal">
+		<span class="card-title grey-text text-darken-4">{{recipe.recipe_name}}<i class="material-icons right">X</i></span>
+		<p>{{recipe.recipe_ingredients}}</p>
+		<p>{{recipe.recipe_method}}</p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+  </div>
+
+
+
+{% endblock %}
