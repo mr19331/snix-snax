@@ -10,6 +10,10 @@
     margin-right: 10px;
 }
 
+nav ul a {
+    color: #f00; 
+}
+
 .collapsible-header .col strong{
     margin: 5px;
     line-height: 42px;
@@ -17,7 +21,7 @@
 
 .hero-container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), transparent),
-    url("./img/veg-crisps.jpg");
+    url("static/img/veg-crisps.jpg");
   no-repeat: center;
 
   background-size: cover;
@@ -89,7 +93,7 @@
   top: 60%;
 }
 .image-container {
-  background: #c0c8d2;
+  background: #f4f4f4;
 }
 
 
