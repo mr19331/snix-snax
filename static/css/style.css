@@ -15,6 +15,84 @@
     line-height: 42px;
 }
 
+.hero-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), transparent),
+    url("./img/veg-crisps.jpg");
+  no-repeat: center;
+
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+}
+
+.hero-text {
+  padding-top: 50px;
+}
+
+.card-search-panel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.4);
+  max-width: 550px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+}
+.search-wrapper .input {
+  width: 75%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.search-wrapper.input.input {
+  color: black;
+}
+
+.searchbtn {
+  background: red;
+  width: 10%;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+.resetbtn {
+  background: grey;
+  width: 10%;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+.searchbtn. fas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+}
+.text-box {
+  width: 50%;
+  font-weight: 300;
+  /* background: rgba(0, 0, 0, 0.5); */
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 60%;
+}
+.image-container {
+  background: #c0c8d2;
+}
+
+
 footer {
     height: 200px;
     }
