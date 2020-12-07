@@ -21,7 +21,7 @@ nav ul a {
 
 .hero-container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), transparent),
-    url("static/img/veg-crisps.jpg");
+    url("https://res.cloudinary.com/mr19331/image/upload/v1606984437/veg-crisps-1500x1125_hbtycp.jpg");
   no-repeat: center;
 
   background-size: cover;

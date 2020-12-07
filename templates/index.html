@@ -4,16 +4,18 @@
    <!-- <div class="hero-text">  -->
    <h3 class="hero-text white-text center-align">SnixSnax Recipe Club</h3>
    <h4 class="white-text center-align">Find A Recipe....</h4>
+
+   <!-- search bar -->
+
    <div class="row card-search-panel center-align  lighten-5">
       <form action="{{ url_for('search') }}" method="post" class="col s12 ">
          <div class="row valign-wrapper center-align">
             <div class="input-field col s12 ">
-               <i class="fas fa-search prefix white "></i>
+               <i class="fas fa-search prefix"></i>
                <input type="text" name="query" id="query" minlength="3" class="validate" required>
                <label for="query">Search </label>
             </div>
-            <button type="submit" class="grey darken-1 btn text-shadow">
-            <i class="fas fa-search right"></i>Search
+            <button type="submit" class="grey darken-1 btn text-shadow">Search
             </button>
             <a href="{{url_for('index')}}" class="red btn text-shadow">Reset</a>
          </div>
@@ -22,41 +24,41 @@
   
    <div class=" row text-box">
       <div class="col s12">
-         <h5 class="grey-text text-lighten-4"><strong>Join The Club </strong></h5>
-         <h6 class="grey-text text-lighten-4" > Add your own Recipes! Keep Favourite Recipes in your Recipe Box</h6>
+         <h5 class="grey-text text-darken-4"><strong>Join The Club </strong></h5>
+         <h6 class="grey-text text-darken-4" > Add your own Recipes! Keep Favourite Recipes in your Recipe Box</h6>
          <a href="{{url_for('register') }}"
             class="btn large red white-text"
             >Join Us!</a>
       </div>
-   </div>
+   </div> 
 </div>
 <!-- image-gallery adapted from codepen -->
 <div class=" image-container">
-   <h4 class="center-align"><strong> Snax Categories</strong><br></h4>
-   <h5 class= "center-align">... for lunchbox, hiking, working from home!</h5>
+   <h4 class="center-align"><strong> Recipe Categories</strong><br></h4>
+   <p class= "center-align">... for lunchbox, hiking, working from home!</p>
    <div class="row">
       <div class="col s3 m3">
          <a href="#">
             <img src="https://res.cloudinary.com/mr19331/image/upload/v1606561821/chocomarzipan_bites_yonfmz.png" alt="chocolate-marzipan" class="materialboxed responsive-img">
-            <h5 class= "center-align">Sweet </h5>
+            <h5 class= "center-align black-text">Sweet </h5>
          </a>
       </div>
       <div class="col s3 m3">
          <a href="#">
             <img src="https://res.cloudinary.com/mr19331/image/upload/v1607074759/Frozen-Grapes_l068cx.jpg" alt="frozen-grapes" class="materialboxed responsive-img">
-            <h5 class= "center-align">Low Calorie </h5>
+            <h5 class= "center-align black-text">Low Calorie </h5>
          </a>
       </div>
       <div class="col s3 m3">
          <a href="#">
             <img src="https://res.cloudinary.com/mr19331/image/upload/v1607073985/rollups-601440-1_tcywyn.jpg" alt="fruit-rollups" class="materialboxed responsive-img">
-            <h5 class= "center-align">Kids </h5>
+            <h5 class= "center-align black-text">Kids </h5>
          </a>
       </div>
       <div class="col s3 m3">
          <a href="#">
             <img src="https://res.cloudinary.com/mr19331/image/upload/v1606561860/Savoury_Seeds_wijfwl.png" alt="savoury-seeds" class="materialboxed responsive-img">
-            <h5 class= "center-align">Savoury</h5>
+            <h5 class= "center-align black-text">Savoury</h5>
          </a>
       </div>
    </div>
@@ -64,7 +66,7 @@
 <!-- video section  -->
 <div class= "video-section">
    <h4 class="center-align"><strong> Snax How To Videos</strong><br></h4>
-   <h5 class= "center-align">Delicious, Easy Recipes!</h5>
+   <p class= "center-align"> Learn How....to make Delicious Snax Treats!</p>
    <div class = " row">
       <div class="col s12 l4">
          <div class="  video-container">
