@@ -13,7 +13,7 @@ Commission can also be earned from adding an ingredient shopping list for popula
 
 [TOC]
 
-
+### Directory Layout for Project 
 
 
 
@@ -51,15 +51,36 @@ To monetize the site so that users will purchase goods or take actions that crea
 
 ### **User Stories**
 
-- As a mother, I want to have a source of  healthy snack ideas, for my kids' lunch boxes 
-- As  a hiker I want crunchy or easily packed snacks that won't get soggy when I am carrying them all day.
-- I have to work from home  I want low calorie snacks that I can snack on during the day. 
-- I want good  ideas for  sweet and savoury snacks for a childrens birthday party 
-- As a user, I have some great recipes for snacks and I want to see them online but I don't have a blog or my own website 
+​          **As a new /first time  site user** 
+
+​       I want to understand what  information this site is offering  immediately 
+
+- I expect to be able to access the information that I want easily using conventional  image and link clicking methods
+- I want to be able to access categories of recipes to save me time,  as well as searching by name
+- I want to be able to visit the site easily on my phone and tablet as well as desktop
+- I  don't want to be spammed because I have visited the site 
+-  I don't want to be forced sign up for anything or  to give out my information unless I get value in return. 
+- I may want to buy gifts from the site or  cookware 
+- If I like thte site I might want to  watch videos that demonstrate cooking techniques etc.
+- I want to see some information on the website owners so that I can decide if the site is reputable ( Contact information, privacy policy, About us)
+- I expect to be able to connect with the social platforms that the brand is using so I can get further reassurance that they are reputable
+
+**As a returning visitor/user to the site:**
+
+- I want to be able to register quickly and give a minimum of personal information
+-  I may not want to give my email just to register 
+- If I make an error logging in I want to be alerted to my mistake 
+- I expect any information I give to be secure and confidential 
+- I expect to be able to login and logout easily and  to be able to find those links quickly
+- I do not want other users to be able to edit or delete my recipes
+-  I want to be able to add a recipe , edit it and delete it and I don't want the process to be complicated 
+- I want to see clear instructions how to  take these actions 
+- I want to see confirmation when I have successfully completed any of these actions 
+- If I decide to delete one of my recipes I expect a warning in case I clicked the button accidentally 
 
 
 
-#### **Strategy**
+#### Strategy
 
 The primary function of the SnixSnax  site is to persuade users that they will receive valuable information in exchange for registering and using the site. If the  user goal is achieved,  the site-owner goal will  be met, that is to have users return many times so they can shop on site  and the site-owner earn commission from advertising.
 
@@ -88,7 +109,7 @@ The monetization of the Home page is important because the user will not spend m
 
 #### **Skeleton**
 
-- Wireframes 
+- Wireframes - [all wireframes](/workspace/snix-snax/wireframes.md) 
 
   
 
@@ -161,30 +182,79 @@ Links to an About Us page, a Contact Us page and a Privacy Policy page
 These links are required for the site but are displayed in the footer to avoid cluttering the main navbar.
 Social links to Facebook, Youtube and Instagram and Twitter platforms are shown in the footer section. 
 
-  
+####   Features Left To Implement
+
+- ​      Add  functionality to allow frequent users to remain logged for a period of several days 
+- ​      Add functionality to allow users to give star ratings and a short comment about the recipes they have used 
+
+- ​     Add a BuyOnline option to the ingredients section for users that will earn commission for the site- owner .
+  ​               It is possible to earn commission from online supermarkets such as Tesco, Ocado and Sainsbury. The option to click and collect could be added to the recipe ingredients section so that missing ingredients for a recipe can be added to an online order that goes to the supermarket 
+
+-  Advertise and sell gift items such as hampers , items can be drop shipped from Amazon and commission earned as an Amazon associate.
+- Adsense  ads can also earn commission for the site- owner.  Sections can be assigned within the site and relevant items will be automatically displayed to users. 
+-  **Live Chat** so that users can ask questions and get them answered without delay
+- **Remarketing pixels** so that the company can remind the visitor that they visited the site 
+- Connect to the spoontacular.com API to allow users to search very large database of recipes and get nutrition data about recipes
+-  Advertise and sell kitchen tools and aprons and mugs with the brand logo, for site owner commissions. 
+- Add a print or email option to the add recipe section so the user can easily print or  share the recipe
 
 
 
-.
+## Defensive Design
+
+The following measures were used in the SnixSnax website to  anticipate user error  and minimise the consequences to provide a better user experience on the site, by assisting the user to successful outcomes in the site activities :
+
+**Navigation** 
+
+**Login and Registration**
+
+<u>Blank field submission</u>
+
+Submission of the login or signup form with a blank field  triggers an error message to the user 
+Validation is indicated to the user when filling input fields by use of a red ( warning ) or green colored line for the input 
+
+<u>Quality of information submission</u>:
+
+Character type  is controlled for each input field -- only numbers between 0-9 and alphabetical characters are accepted 
+the user is informed with  tooltip if unacceptable entries are made. 
+
+Character quantity is controlled for input fields  (5-15 characters)   users cannot enter a one letter username or password. 
+
+**Adding and Editing a recipe** 
+
+Submission of the add recipe or edit recipe form with a blank field  triggers an error message to the user 
+Validation is indicated to the user when filling input fields by use of a red ( warning ) or green colored line for the input 
+
+Character type  is controlled for each input field -- only numbers between 0-9 and alphabetical characters are accepted 
+the user is informed with  tooltip if unacceptable entries are made. 
+
+Character quantity is controlled for input fields  (5-200 characters)   users cannot enter a recipe that is excessively long. 
+
+**Deleting a recipe**
+
+Accidental deletion of a recipe by a user 
+User receives a warning that the deletion cannot be undone and asked whether they wish to proceed 
+
+**Conditional Access to site areas** 
+
+Users state is used to  restrict user access to site areas and activities :
+
+<u>Nav bar links</u> 
+
+Users that are not logged in, have access to signup, login logout and home menu links 
+Session users can access home, logout, add a recipe and recipe box links
+
+Admin users can access home, manage categories, add recipe, logout   
+
+<u>Recipe Buttons</u> 
+
+Edit and delete buttons are only displayed to recipe owners 
 
 
 
-#### Features Left to Implement
-- Add a BuyOnline option to the ingredients section for users that will earn commission for the site- owner
+​     
 
-It is possible to earn commission from online supermarkets such as Tesco, Ocado and Sainsbury. The option to click and collect could be added to the recipe ingredients section so that missing ingredients for a recipe can be added to an online order that goes to the supermarket 
-
-- Add a print or email option to the add recipe section so the user can easily print or share the recipe   
-- Advertise and sell kitchen tools and aprons and mugs with the brand logo 
-- Advertise and sell gift items such as hampers , items can be drop shipped from Amazon and commission earned as an Amazon associate.
--  Adsense  ads can also earn commission for the site- owner.  Sections can be assigned within the site and relevant items will be automatically displayed to users.  
-
-- **Live Chat** so that users can ask questions and get them answered without delay
-- **Remarketing pixels** so that the company can remind the visitor that they visited the site
-
-
-
-#### Technologies Used
+##     Technologies Used
 
 ​        CSS
 
@@ -200,7 +270,7 @@ It is possible to earn commission from online supermarkets such as Tesco, Ocado 
 
 ​       [Python + Flask](https://flask.palletsprojects.com/en/1.1.x/) 
 
--  The project uses **Flask** as a lightweight WSGI  ( *Web Server Gateway Interface*) web application framework . It contains Werkzeug and Jinja and has become one of the most popular *Python* web application frameworks
+-  The project uses **Flask** as a lightweight WSGI  ( *Web Server Gateway Interface*) web application framework . Flask includes  Werkzeug and the powerful Jinja templating language and is  one of the most popular *Python* web application frameworks
 
 ​       [MongoDB](https://www.mongodb.com/)
 
@@ -218,6 +288,12 @@ It is possible to earn commission from online supermarkets such as Tesco, Ocado 
 
     - The project uses **JQuery** to simplify DOM manipulation.
 
+    ## Defensive Design 
+    
+    
+    
+    
+    
     ## Security
     
     User Authorization and Authentication
@@ -231,104 +307,6 @@ It is possible to earn commission from online supermarkets such as Tesco, Ocado 
 ​    
 
 
-## Testing
-
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-#### Code Testing     used the following sites: 
-
-HTML using [HTML validator](https://validator.w3.org/)
-
-CSS using [jigsaw](https://jigsaw.w3.org/css-validator/) 
-
-JavaScript using [JavaScript Validator](https://jshint.com/) 
-
-Python using [Python Validator](http://pep8online.com/) 
-
-[Developer Tools Lighthouse](https://developers.google.com/web/tools/lighthouse) 
-
-#### Manual Testing 
-
-##### LINKS 
-
-##### NavBar
-
-**Session User** 
-
-Home, Login Logout, Register, Profile, Add Recipe links were tested to check that the link took the session user to the correct landing page 
-
-**Admin** 
-Home, Login, Logout, Profile, Manage Categories, Add Recipe links were tested to check that the link took the admin user to the correct landing page
-
-##### BUTTONS
-
-**Session User**
-
- **Register Page** 
-Register button  transfers user correctly to profile page
-
-**Login Page**
- Login button transfers user correctly to Recipe Box page
-
-**Recipe Box page** 
-Edit button  on the  connects correctly to the edit_recipe page
-
- **Edit_Recipe page**
-Delete button  flashes a dropdown alert to the user asking them to confirm  deletion or cancel 
- If the user cancels he remains on the Edit_Recipe page
-if the user chooses to confirm deletion the recipe is deleted and a  flash message is shown to the user " Recipe deleted Successfully " 
-
-Edit button transfers users to the Edit_Recipe page, completing an edit and clicking the Edit button  flashes the message "Your Recipe was Successfully Edited"
-
-**Add Recipe Page**
-Add Recipe  button on  transfers user to Recipe Box page and shows flash message  
-"Your Recipe was Successfully Added "
-
-
-
-**Admin User**
-
-Add Category button on Manage Category page  correctly transfers admin user to  Add_Category page
-Add Category button on Add_Category page adds the new category and flashes message  " Your new Category was Added"
-
-Edit button on a category on the Manage Category page transfers admin user to  Edit_Category landing page 
-Cancel button on  Edit_category page returns admin to Manage Categories page and cancels any action.  
-Edit Category button on Edit_Category page   transfers admin user to Edit_Category page 
-Delete Category button on Edit_Category page when clicked shows a dropdown alert asking if the user is sure they want to delete the category 
-If cancel is clicked the user remains on the page 
-If delete is clicked the category is deleted and the user returned to the get_cagegories page
-
-**FOOOTER LINKS**  
-
-Links to Contact Page , About Us page and Privacy policy page 
-Social Links to Facebook, Instagram, Youtube and Twitter 
-
-**FORMS**  
-
-1. Add Recipe Form 
-2. Edit Recipe Form 
-3. Register Form 
-4. Login Form 
-5. Edit Category Form 
-6. Add Category Form 
-
-
-
-
-
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
-
-
-
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
-
-Appearance and operation of  project  on different browsers and screen sizes.
 
 ### **Bugs /Problems during project development**** 
 
@@ -368,26 +346,49 @@ In addition, if it is not obvious, you should also describe how to run your code
 
 ### Content
 
+Code snippets 
+
+ Image gallery on home page from [codepen.io](https://codepen.io/geo555/pen/ZoOWQM) 
+
 
 ### Media
-- The photos used in the category section were from 
+  **Recipe Images** 
+
 - Frozen grapes from [veganheaven.org](https://veganheaven.org/all-recipes/frozen-grapes-the-best-snack-ever/)
+
 - Savoury (cheese & Bacon rolls ) from [kidspot.com.au](https://www.kidspot.com.au/kitchen/recipes/cheese-bacon-rolls/wm3gguui)
+
 - Savoury (veggie chips ) from [kidspot.com.au](https://www.kidspot.com.au/kitchen/recipes/healthy-vegetable-chips-recipe/20ywthc8)
+
 - Savoury ( roasted chickpeas) from [kidspot.com.au](https://www.kidspot.com.au/kitchen/recipes/healthy-roasted-chickpeas/ny7b8cv9)
+
 - Sweet ( bliss balls)from [kidspot.com.au](https://www.kidspot.com.au/kitchen/galleries/kid-friendly-bliss-ball-recipes-lunch-box-treat/ycfgsyzw?r=lunchbox&h=lunchbox)
+
 - Sweet ( apple chips ) from [kidspot.com.au](https://www.kidspot.com.au/kitchen/recipes/homemade-apple-chips/qfsm60l0)
+
 - Sweet ( strawberry rollups) from [kidspot.com.au](https://www.kidspot.com.au/kitchen/recipes/strawberry-roll-ups-sugar-free-recipe/59isss1z)
+
 - Gluten Free 
+
 - Kids 
-- 
-- Videos 
-- video for chocolate crunch bark from [kidspot.com.au](https://www.kidspot.com.au/kitchen/recipes/kids-home-kidspot-raw-chocolate-crunch-bars-recipe-video/foc3uenm?r=sweets&h=sweets) 
-- video for  
+
+  
+
+  **Video section on home page**
+
+- cheddar star biscuits from [kidspot.com.au](https://youtu.be/rTkol3a8QXE)
+
+- lemon yoghurt cupcakes from [kidspot.com.au](https://youtu.be/1UvM3htSxME) 
+
+- muesli bars from [kidspot.com.au](https://youtu.be/SQrYOK_RVkc) 
+
+​      I**mage on About.html page**
+​     By Brooke Cagle on [Unsplash](https://unsplash.com/@brookecagle?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) 
 
 ### Acknowledgements
 
-- I received inspiration for this project from delish.com from [Epicurious](www.) and from [All Recipes](www.allrecipes.co.uk)
+- I received inspiration for this project from delish.com from [Epicurious](www.) and from [All Recipes](www.allrecipes.co.uk) and KIdspot.com.au
+- Privacy Policy was generated from [Free Privacy Policy](https://www.freeprivacypolicy.com/free-privacy-policy-generator/)
 
 
 
