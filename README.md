@@ -109,7 +109,7 @@ The monetization of the Home page is important because the user will not spend m
 
 #### **Skeleton**
 
-- Wireframes - [all wireframes](/workspace/snix-snax/wireframes.md) 
+- Wireframes - [all wireframes](/wireframes.md) 
 
   
 
