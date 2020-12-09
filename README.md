@@ -109,7 +109,7 @@ The monetization of the Home page is important because the user will not spend m
 
 #### **Skeleton**
 
-- Wireframes - [all wireframes](wireframes.md) 
+- Wireframes - [all wireframes] (https://github.com/mr19331/snix-snax/blob/master/wireframes.md) 
 
   
 
@@ -288,7 +288,7 @@ Edit and delete buttons are only displayed to recipe owners
 
     - The project uses **JQuery** to simplify DOM manipulation.
 
-    ##Testing   [all testing ](/testing.md) 
+    ##Testing   [all testing ](https://github.com/mr19331/snix-snax/blob/master/TESTING.md) 
 
     ## Defensive Design 
     
