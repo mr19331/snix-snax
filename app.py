@@ -168,8 +168,8 @@ def get_categories():
 
 @app.route("/category_type/<recipe_id>")
 def category_type(recipe_id):
-    recipe = (mongo.db.recipe.find().sort("category_name")) 
-    return render_template("category_type.html")
+    recipe = mongo.db.recipes.find({"_id": ObjectId("category_name")})
+    return render_template("category_type.html", recipe=recipe)
 
 
 @app.route("/add_category", methods=["GET", "POST"])

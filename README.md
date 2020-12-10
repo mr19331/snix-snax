@@ -109,7 +109,7 @@ The monetization of the Home page is important because the user will not spend m
 
 #### **Skeleton**
 
-- Wireframes - [all wireframes] (https://github.com/mr19331/snix-snax/blob/master/wireframes.md) 
+- Wireframes - [all wireframes] (https://github.com/mr19331/snix-snax/WIREFRAMES.md) 
 
   
 

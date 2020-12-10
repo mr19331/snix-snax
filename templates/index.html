@@ -17,7 +17,7 @@
             </div>
             <button type="submit" class="grey darken-1 btn text-shadow">Search
             </button>
-            <a href="{{url_for('index',(recipe_id))}}" class="red btn text-shadow">Reset</a>
+            <a href="{{url_for('index')}}" class="red btn text-shadow">Reset</a>
          </div>
        </form>
    </div>
@@ -50,7 +50,7 @@
          </a>
       </div>
       <div class="col s3 m3">
-         <a href="{{url_for('category_type')}}"> 
+         <a href="{{url_for('category_type', recipe_id=recipe._id)}}"> 
             <img src="https://res.cloudinary.com/mr19331/image/upload/v1607073985/rollups-601440-1_tcywyn.jpg" alt="fruit-rollups" class="materialboxed responsive-img">
             <h5 class= "center-align black-text">Kids </h5>
          </a>
