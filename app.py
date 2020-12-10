@@ -20,7 +20,8 @@ mongo = PyMongo(app)
 
 @app.route("/")
 def index():
-    return render_template('index.html')
+    recipe = list(mongo.db.recipes.find())
+    return render_template('index.html', recipe=recipe)
 
 
 @app.route("/all_recipes")
@@ -166,10 +167,10 @@ def get_categories():
     return render_template("categories.html", categories=categories)
 
 
-@app.route("/category_type/<recipe_id>")
-def category_type(recipe_id):
-    recipe = mongo.db.recipes.find({"_id": ObjectId("category_name")})
-    return render_template("category_type.html", recipe=recipe)
+@app.route("/category_type/<category_id>/")
+def category_type(category_id):
+    recipes = mongo.db.categories.find({"category_name": (category_id)})
+    return render_template("category_type.html", recipes=recipes)
 
 
 @app.route("/add_category", methods=["GET", "POST"])
@@ -195,7 +196,7 @@ def edit_category(category_id):
         flash("Category Successfully Updated")
         return redirect(url_for("get_categories"))
 
-    category = mongo.db.categories.find_one({"_id": ObjectId(category_id)})
+    category = mongo.db.recipes.find_one({"_id": ObjectId(category_id)})
     return render_template("edit_category.html", category=category)
 
 

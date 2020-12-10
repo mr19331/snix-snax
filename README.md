@@ -12,6 +12,7 @@ Commission can be earned as an amazon.com associate from advertising snack recip
 Commission can also be earned from adding an ingredient shopping list for popular supermarkets ( Tesco, Ocado Sainsburys) so that users can quickly send a shopping request for the ingredients that they are missing 
 
 [TOC]
+![Snix Snax Recipe Club ]()
 
 ### Directory Layout for Project 
 
