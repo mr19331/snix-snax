@@ -169,7 +169,7 @@ def get_categories():
 
 @app.route("/category_type/<category_id>/")
 def category_type(category_id):
-    recipes = mongo.db.categories.find({"category_name": (category_id)})
+    recipes = mongo.db.recipes.find({"category_name": (category_id)})
     return render_template("category_type.html", recipes=recipes)
 
 
@@ -220,7 +220,6 @@ def contact():
 @app.route('/privacy')
 def privacy():
     return render_template('privacy.html')
-
 
 
 if __name__ == "__main__":

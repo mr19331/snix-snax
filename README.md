@@ -12,7 +12,8 @@ Commission can be earned as an amazon.com associate from advertising snack recip
 Commission can also be earned from adding an ingredient shopping list for popular supermarkets ( Tesco, Ocado Sainsburys) so that users can quickly send a shopping request for the ingredients that they are missing 
 
 [TOC]
-![Snix Snax Recipe Club ]()
+
+![](https://res.cloudinary.com/mr19331/image/upload/v1607680940/Mockup-Generator_ygxaxn.png)
 
 ### Directory Layout for Project 
 
@@ -110,7 +111,7 @@ The monetization of the Home page is important because the user will not spend m
 
 #### **Skeleton**
 
-- Wireframes - [all wireframes] (https://github.com/mr19331/snix-snax/WIREFRAMES.md) 
+- Wireframes - ![] ( /WIREFRAMES.md) 
 
   
 
@@ -231,10 +232,14 @@ the user is informed with  tooltip if unacceptable entries are made.
 
 Character quantity is controlled for input fields  (5-200 characters)   users cannot enter a recipe that is excessively long. 
 
+Buttons are clearly marked, only one option on add recipe form  to submit 
+2 buttons on edit recipe form user can choose to continue with edit or cancel 
+
 **Deleting a recipe**
 
 Accidental deletion of a recipe by a user 
-User receives a warning that the deletion cannot be undone and asked whether they wish to proceed 
+User receives a  modal warning that the deletion cannot be undone and asked whether they wish to proceed
+Originally the warning was given from a browser alert but my mentor suggested using a modal for more delivery control even if the modal warning involves more actions by the user 
 
 **Conditional Access to site areas** 
 
@@ -250,6 +255,15 @@ Admin users can access home, manage categories, add recipe, logout
 <u>Recipe Buttons</u> 
 
 Edit and delete buttons are only displayed to recipe owners 
+
+##Defensive Design Features to be added
+
+Admin login is currently based on username which is open to bruteforce. 
+A better solution is to adjust admin login to a  key:value pair in users section
+This allows for more than one admin login on the team. 
+
+Salt and hash additions to the username and passwords are currently basic and for more security they should be improved.  
+
 
 
 
