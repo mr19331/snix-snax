@@ -111,7 +111,7 @@ The monetization of the Home page is important because the user will not spend m
 
 #### **Skeleton**
 
-- Wireframes - ![] ( /WIREFRAMES.md) 
+ [Wireframes](/WIREFRAMES.md)  
 
   
 
@@ -303,7 +303,7 @@ Salt and hash additions to the username and passwords are currently basic and fo
 
     - The project uses **JQuery** to simplify DOM manipulation.
 
-    ##Testing   [all testing ](https://github.com/mr19331/snix-snax/blob/master/TESTING.md) 
+   [##Testing ]   (/TESTING.md) 
 
     ## Defensive Design 
     
