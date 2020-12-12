@@ -4,7 +4,7 @@ Snacks  are a staple for lunch-boxes, hikes and TV-time, and now they are import
 
 . Snix-Snax Recipe Club  provides users with a never-ending flow of new snack ideas and recipes from club members. 
 
-**Users of  the SnixSnax site**  can register to  share their favourite snack recipes and  create their own library of favourites ( called a Recipe Box) they can  use and store other people's recipes, watch how to videos and buy cookbooks and cooking tools.
+**Users of  the SnixSnax site**  can register to  share their favourite snack recipes, can create, edit and delete their own recipes, and view a library of recipes ( called a Recipe Box) they can  use and store other people's recipes, watch how to videos and buy cookbooks and cooking tools.
 The snacks are categorised under several popular headings - Sweet, Savoury, Gluten- Free, Kids and Popular. 
 
 **Owners of the SnixSnax  site** have several opportunities for monetization
@@ -21,7 +21,7 @@ Commission can also be earned from adding an ingredient shopping list for popula
 
 ### Project Flow Diagram
 
-![](https://res.cloudinary.com/mr19331/image/upload/v1606150777/Project-Flow-Diagram_bvsuqi.png)
+![](https://res.cloudinary.com/mr19331/image/upload/v1607767817/Project-Flow-Diagram2_lxzpm1.png)
 
 
 
