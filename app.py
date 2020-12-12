@@ -45,7 +45,7 @@ def register():
             {"username": request.form.get("username").lower()})
 
         if existing_user:
-            flash("Username already exists")
+            flash("Sorry, this Username already exists")
             return redirect(url_for("register"))
 
         register = {
@@ -54,9 +54,9 @@ def register():
         }
         mongo.db.users.insert_one(register)
 
-        # put new user into 'session' cookie
+        #  new user is put into 'session' cookie
         session["user"] = request.form.get("username").lower()
-        flash("Registration Successful!")
+        flash("Sign Up Successful!")
         return redirect(url_for("profile", username=session["user"]))
 
     return render_template("register.html")
@@ -161,7 +161,7 @@ def delete_recipe(recipe_id):
     return redirect(url_for("all_recipes"))
 
 
-@app.route("/get_categories")
+@app.route("/get_categories") 
 def get_categories():
     categories = list(mongo.db.categories.find().sort("category_name", 1))
     return render_template("categories.html", categories=categories)
@@ -170,7 +170,7 @@ def get_categories():
 @app.route("/category_type/<category_id>/")
 def category_type(category_id):
     recipes = mongo.db.recipes.find({"category_name": (category_id)})
-    return render_template("category_type.html", recipes=recipes)
+    return render_template("category_type.html", recipes=recipes, category_id=category_id)
 
 
 @app.route("/add_category", methods=["GET", "POST"])

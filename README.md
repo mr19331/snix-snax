@@ -414,6 +414,7 @@ Code snippets
 
 - I received inspiration for this project from delish.com from [Epicurious](www.) and from [All Recipes](www.allrecipes.co.uk) and KIdspot.com.au
 - Privacy Policy was generated from [Free Privacy Policy](https://www.freeprivacypolicy.com/free-privacy-policy-generator/)
+- Adding the functools import and wraps for securing login was aided by  [Protecting Endpoints in Flask apps] (https://blog.tecladocode.com/protecting-endpoints-in-flask-apps-by-requiring-login/)
 
 
 
