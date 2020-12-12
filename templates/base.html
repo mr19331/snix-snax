@@ -81,23 +81,23 @@
           <div class="container">
             <div class="row">
               <div class="col l4 s12">
-                <h5 class="white-text">Join SnixSnax!</h5>
-                <p class="grey-text text-lighten-4">Sign Up Here </p>
+                <h5 class="white-text center-align">Join SnixSnax!</h5>
+                <p class="grey-text text-lighten-4 center-align">Sign Up Here </p>
                
             <a href="{{url_for('register') }}"
           class="btn-small white red-text"
-          >Join Us!</a>
+          ><strong>Join Us!</strong></a>
            
              </div>
             
               <div class="col l4 s12">
                 <h5 class="white-text">SnixSnax Recipe Club</h5>
-                <ul>  
-                  <li><a href = "{{url_for('contact') }}" class = "grey-text text-lighten-4 ">  
+                <ul class="center-align">  
+                  <li><a href = "{{url_for('contact') }}" class = "grey-text text-lighten-4">  
                      Contact Us</a></li>  
-                  <li><a href = "{{url_for('about') }}" class = "grey-text text-lighten-4 ">  
+                  <li><a href = "{{url_for('about') }}" class = "grey-text text-lighten-4">  
                      About Us</a></li>  
-                  <li><a href = "{{url_for('privacy') }}" class = "grey-text text-lighten-4 ">  
+                  <li><a href = "{{url_for('privacy') }}" class = "grey-text text-lighten-4">  
                      Privacy Policy</a></li>  
                </ul>
                 
@@ -122,12 +122,7 @@
                 </div>
               </div>
           </div>
-          <div class="footer-copyright">
-            <div class="container">
-               © 2020 SnixSnax Recipe Club
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-          </div>
+          
         </footer>
 
         {% block footer %}
