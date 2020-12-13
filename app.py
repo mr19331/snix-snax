@@ -161,7 +161,7 @@ def delete_recipe(recipe_id):
     return redirect(url_for("all_recipes"))
 
 
-@app.route("/get_categories") 
+@app.route("/get_categories")
 def get_categories():
     categories = list(mongo.db.categories.find().sort("category_name", 1))
     return render_template("categories.html", categories=categories)
@@ -200,7 +200,7 @@ def edit_category(category_id):
     return render_template("edit_category.html", category=category)
 
 
-@app.route("/delete_category<category_id>")
+@app.route("/delete_category/<category_id>")
 def delete_category(category_id):
     mongo.db.categories.remove({"_id": ObjectId(category_id)})
     flash('Category Deleted Successfully')
