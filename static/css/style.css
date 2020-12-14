@@ -19,18 +19,16 @@ nav ul a {
     line-height: 42px;
 }
 
-.hero-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
+.hero-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent), 
     url("https://res.cloudinary.com/mr19331/image/upload/v1606984437/veg-crisps-1500x1125_hbtycp.jpg")
-  no-repeat center;
+ no-repeat center;
+ background-size: cover;
+ width: 100%;
+ height: 80vh;
+ }
 
-  background-size: cover;
-   width: 100%; 
-  height: 80vh;
-}
-
-h3 .hero-text  {
-   
+ .hero-text  {
   padding-top: 20px;
 }
 
@@ -125,10 +123,4 @@ footer {
 .footer-icon li a:hover {
     background: #757575;
     color: #fff;
-}
-
-@media only screen and (min-width: 768px){
-.hero-text{
- padding-top: 0px;   
-   } 
 }

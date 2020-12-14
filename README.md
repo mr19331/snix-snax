@@ -113,7 +113,11 @@ The monetization of the Home page is important because the user will not spend m
 
 ##### **Wireframes**
 
- [Wireframes](/WIREFRAMES.md)  
+ [Wireframes](/WIREFRAMES.md)
+ Design changes made from the original wireframes. 
+ MaterializeCss allows for responsiveness in all versions. 
+ The categories
+ It was decided to leave all 3 videos in the mobile version - they did not make the page too long and users liked them.  
 
   
 
@@ -357,6 +361,13 @@ Salt and hash additions to the username and passwords are currently basic and fo
  file app.py Line 64  Linting error  that will not go away 
 Linting errors on each template because the doctype is missing 
 
+Originally I used a delete confirm dropdown from the browser as part of the defensive design against accidental user deletion.
+On my mentor's suggestion I replaced this with the materialize modal instead, to ensure that the functionality was not browser dependent. 
+
+I had a problem on add_recipe.html template with the card-reveal action. The action was originally working but when I added the if statement
+ for the session user to the card ,the card-reveal action stopped working . This was resolved with help from Tim the tutor who helped me to rearrange
+  the code so that the modal was inside the statement but the card-reveal section outside. 
+
 
 
 ## Deployment
@@ -378,12 +389,7 @@ The automatic deployment option on Heroku was used as follows :
 5. When the app is deployed  it will say "Your app was successfully deployed" and then you can click view 
     to view the app 
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
 
-In addition, if it is not obvious, you should also describe how to run your code locally.
 
 
 ## Credits
@@ -412,7 +418,7 @@ Code snippets
 
 - Sweet ( strawberry rollups) from [kidspot.com.au](https://www.kidspot.com.au/kitchen/recipes/strawberry-roll-ups-sugar-free-recipe/59isss1z)
 
-- Gluten Free 
+-Savoury (kale chips)
 
 - Kids 
 
@@ -426,12 +432,12 @@ Code snippets
 
 - muesli bars from [kidspot.com.au](https://youtu.be/SQrYOK_RVkc) 
 
-​      I**mage on About.html page**
+​      Image on About.html page**
 ​     By Brooke Cagle on [Unsplash](https://unsplash.com/@brookecagle?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) 
 
 ### Acknowledgements
 
-- I received inspiration for this project from delish.com from [Epicurious](www.) and from [All Recipes](www.allrecipes.co.uk) and KIdspot.com.au
+- The inspiration for this project  was  from [Delish.com](www.delish.com) and from [All Recipes](www.allrecipes.co.uk) and from [KIdspot.com.au]( KIdspot.com.au)
 - Privacy Policy was generated from [Free Privacy Policy](https://www.freeprivacypolicy.com/free-privacy-policy-generator/)
 - Adding the functools import and wraps for securing login was aided by  [Protecting Endpoints in Flask apps] (https://blog.tecladocode.com/protecting-endpoints-in-flask-apps-by-requiring-login/)
 
