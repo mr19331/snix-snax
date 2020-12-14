@@ -4,7 +4,7 @@
     <div class="hero-img">
     <div class="hero-text">  
    <h3 class="hero-text white-text center-align">SnixSnax Recipe Club</h3>
-   <h4 class="white-text center-align">Find A Recipe....</h4>
+   <h5 class="white-text center-align"<strong>Find A Recipe....</strong></h5>
 </div>
    <!-- search bar -->
 
@@ -16,9 +16,9 @@
                <input type="text" name="query" id="query" minlength="3" class="validate" required>
                <label for="query" class="black-text">Search </label>
             </div>
-            <button type="submit" class="grey darken-1 btn text-shadow">Search
+            <button type="submit" class=" btn-small grey darken-1 btn text-shadow">Search
             </button>
-            <a href="{{url_for('index')}}" class="red btn text-shadow">Reset</a>
+            <a href="{{url_for('index')}}" class=" btn-small red btn text-shadow">Reset</a>
          </div>
        </form>
    </div>
@@ -26,7 +26,7 @@
    <div class=" row text-box">
       <div class="col s12">
          <h5 class= "white-text "><strong>Join The Club </strong></h5>
-         <h6 class="white-text " ><strong> Add your own Recipes! Keep Favourite Recipes in your Recipe Box </strong></h6>
+         <h6 class="white-text hide-on-small-only " ><strong> Add your own Recipes! Keep Favourite Recipes in your Recipe Box </strong></h6>
          <a href="{{url_for('register') }}"
             class="btn large red white-text"
             ><strong>Join Us!</strong></a>

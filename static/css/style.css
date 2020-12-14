@@ -32,7 +32,7 @@ background-size: cover;
  }
 
  .hero-text  {
-  padding-top: 20px;
+  padding-top: 5px;
 }
 
 .card-search-panel {
@@ -126,4 +126,13 @@ footer {
 .footer-icon li a:hover {
     background: #757575;
     color: #fff;
+}
+
+/* media query */
+
+@media screen and (max-width 768px) {
+    .hero-text{
+      padding-top: 0px; 
+      font-size: 50%; 
+    }
 }
