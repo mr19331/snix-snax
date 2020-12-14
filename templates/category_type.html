@@ -4,7 +4,7 @@
 
    <h3 class="red-text center-align"> Snix Snax Recipes for {{category_id}}</h3>
        
-    <h5 class="grey-text darken-3  center-align"> Click the recipe name for details, don't forget to favourite the recipes you love!</h5>
+    <h5 class="grey-text darken-3  center-align"> Click the image for recipe details, don't forget to favourite the recipes you love!</h5>
 
 
    
@@ -14,41 +14,46 @@
          
 	<div class="col s12 m3 ">
 		<div class="card  center-align">
+            <!-- image for recipe card -->
 			<div class= "card-image">
 				<img class="activator" src="{{recipe.recipe_image}}">
 					<a href="#" class="halfway-fab btn-floating pink ">
-						<i class="material-icons">favorite</i>
+						<i class="fas fa-heart"></i>
 					</a>
-				</div>
-				<div class="card-content">
+                </div>
+           <!-- recipe description and author  -->
+              <div class="card-content">
 					<span class="card-title activator grey-text text-darken-4"><strong>{{ recipe.recipe_name }}</strong></span>
 					<p><strong>{{recipe.recipe_description}}</strong></p>
 					<p>
 						<em>added by:{{ recipe.added_by}}<br>
-                        {{recipe.date_added}}</em>
-					</p>
+                        {{recipe.date_added}}</em>  
+                    </p>
+                    <!-- search query results -->
               {% if session.user|lower == recipe.added_by|lower %}
         
 					<!-- materialize buttons -->
-					<a href="{{url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn grey darken-2">Edit</a>
-					           <button data-target="confirm-modal" class="btn light-blue lighten-1 modal-trigger">Delete</button>
-               
-          <div id="confirm-modal" class="modal">
-          <div class="modal-content">
+                    <a href="{{url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn grey darken-2">Edit</a>
+                    <!-- delete button to trigger modal -->
+					<button data-target="{{ recipe._id }}" class="btn light-blue lighten-1 modal-trigger">Delete</button>
+                    <!-- modal content warns user -->
+                  <div id="{{ recipe._id }}" class="modal">
+                <div class="modal-content">
              <i class="material-icons">warning</i>
             <p>Are you SURE you want to delete? This cannot be undone!</p>
          </div>
         <div class="modal-footer">
               <a href="{{url_for('delete_recipe', recipe_id=recipe._id) }}" class="modal-action modal-close waves-effect waves-red btn red lighten-1">Delete</a>
-              <a href="!#" class="modal-action modal-close waves-effect waves-red btn red lighten-1">Cancel</a>
+              <a href="{{url_for('category_type' ) }}" class="modal-action modal-close waves-effect waves-red btn red lighten-1">Cancel</a>
         </div>
-
-          </div>
-
-        
-              {% endif %}
-             
-			</div>
+     </div>
+     {% endif %}
+    </div>
+    <div class="card-reveal">
+                        <span class="card-title"> <strong>{{recipe.recipe_name}}</strong><i class="right">Close</i></span>
+                        <p>{{recipe.recipe_ingredients}}</p>
+                        <p>{{recipe.recipe_method}}</p>
+                    </div>
 		</div>
 	  </div>
       {% endfor %} 

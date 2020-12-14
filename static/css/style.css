@@ -20,17 +20,18 @@ nav ul a {
 }
 
 .hero-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), transparent),
-    url("https://res.cloudinary.com/mr19331/image/upload/v1606984437/veg-crisps-1500x1125_hbtycp.jpg");
-  no-repeat: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
+    url("https://res.cloudinary.com/mr19331/image/upload/v1606984437/veg-crisps-1500x1125_hbtycp.jpg")
+  no-repeat center;
 
   background-size: cover;
-  width: 100%;
+   width: 100%; 
   height: 80vh;
 }
 
-.hero-text {
-  padding-top: 50px;
+h3 .hero-text  {
+   
+  padding-top: 20px;
 }
 
 .card-search-panel {
@@ -40,8 +41,8 @@ nav ul a {
   transform: translate(-50%, -50%);
   background: rgba(255, 255, 255, 0.4);
   max-width: 550px;
-  width: 100%;
-  padding: 15px;
+   width: 100%; 
+   padding: 5px; 
   border-radius: 5px;
   border: 1px solid grey;
   display: flex;
@@ -61,19 +62,19 @@ nav ul a {
 
 .searchbtn {
   background: red;
-  width: 10%;
-  border-radius: 5px;
+  width: 5%;
+  border-radius: 0px;
   position: relative;
   cursor: pointer;
 }
 .resetbtn {
   background: grey;
-  width: 10%;
-  border-radius: 5px;
+  width: 5%;
+  border-radius: 0px;
   position: relative;
   cursor: pointer;
 }
-.searchbtn. fas {
+.searchbtn .fas {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -122,6 +123,12 @@ footer {
 }
 
 .footer-icon li a:hover {
-    background: ##757575;
+    background: #757575;
     color: #fff;
+}
+
+@media screen and (min-width: 768px){
+.hero-text{
+ padding-top: 0px;   
+   } 
 }
