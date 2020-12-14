@@ -389,6 +389,55 @@ The automatic deployment option on Heroku was used as follows :
 5. When the app is deployed  it will say "Your app was successfully deployed" and then you can click view 
     to view the app 
 
+    ###Running a Local Version of the App
+
+
+The following must be installed :
+
+​     IDE  of choice 
+
+​    [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) 
+
+- [PIP](https://pip.pypa.io/en/stable/) 
+- [Python3](https://www.python.org/doc/) 
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) 
+
+Access github repository https://github.com/mr19331/snixsnax 
+
+ Copy the repository --either download the  file**, or clone the repository 
+
+**To download the file** 
+
+On     the GitHub project page, click the download tab to allow you to download the     file.
+
+From     the zip file extract to a folder 
+
+**To clone the repository.**
+
+ Copy  the url      https://github.com/mr19331/snix-snax 
+
+Then  run the following command:
+
+git clone https://github.com/mr19331/snix-snax
+
+**Create a virtual environment**  Use the command python -m .venv venv
+
+[venv](https://docs.python.org/3/library/venv.html#module-venv) will usually install the most recent version of Python available 
+
+**Activate the virtual environment** with:  .venv\Scripts\activate 
+
+**Download requirements** for the project using  pip -r requirements.txt.
+
+**Create the file env.py** and within this file store the following 
+
+SECRET_KEY variable 
+ MONGO_URI  to link to your own mongodb database :
+
+**Connect to Mongodb** the database must be named recipe_manager with 3 collections users, recipes and categories 
+
+**To run the app** use command   pyhon3 app.py
+
+ **View the app** by clicking on the browser button that is supplied after typing     pyhon3 app.py 
 
 
 

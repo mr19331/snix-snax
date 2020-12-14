@@ -19,13 +19,16 @@ nav ul a {
     line-height: 42px;
 }
 
-.hero-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent), 
+.hero-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent), 
     url("https://res.cloudinary.com/mr19331/image/upload/v1606984437/veg-crisps-1500x1125_hbtycp.jpg")
- no-repeat center;
- background-size: cover;
+ no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
  width: 100%;
- height: 80vh;
+ height: 100vh;
  }
 
  .hero-text  {
