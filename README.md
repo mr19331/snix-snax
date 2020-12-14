@@ -195,11 +195,15 @@ Social links to Facebook, Youtube and Instagram and Twitter platforms are shown 
   ​               It is possible to earn commission from online supermarkets such as Tesco, Ocado and Sainsbury. The option to click and collect could be added to the recipe ingredients section so that missing ingredients for a recipe can be added to an online order that goes to the supermarket 
 
 -  Advertise and sell gift items such as hampers , items can be drop shipped from Amazon and commission earned as an Amazon associate.
+- Advertise and sell kitchen tools and aprons and mugs with the brand logo, for site owner commissions.
 - Adsense  ads can also earn commission for the site- owner.  Sections can be assigned within the site and relevant items will be automatically displayed to users. 
 -  **Live Chat** so that users can ask questions and get them answered without delay
 - **Remarketing pixels** so that the company can remind the visitor that they visited the site 
 - Connect to the spoontacular.com API to allow users to search very large database of recipes and get nutrition data about recipes
--  Advertise and sell kitchen tools and aprons and mugs with the brand logo, for site owner commissions. 
+- Add Twitter and Facebook widgets to each recipe so that users can like and share recipes immediately
+- Connect the favourite button on the recipes so that  the Home Page displays those recipes that are popular
+- Build out the admin dashboard to show how many recipes are currently on site and which are most viewed
+- Build out the user's profile page showing the recipes they have added with likes, shares and favourites, their account details ( username etc)
 - Add a print or email option to the add recipe section so the user can easily print or  share the recipe
 
 
@@ -208,14 +212,14 @@ Social links to Facebook, Youtube and Instagram and Twitter platforms are shown 
 
 The following measures were used in the SnixSnax website to  anticipate user error  and minimise the consequences to provide a better user experience on the site, by assisting the user to successful outcomes in the site activities :
 
-**Navigation** 
+
 
 **Login and Registration**
 
 <u>Blank field submission</u>
 
 Submission of the login or signup form with a blank field  triggers an error message to the user 
-Validation is indicated to the user when filling input fields by use of a red ( warning ) or green colored line for the input 
+Validation (supplied by Materializecss.com) is indicated to the user when filling input fields by use of a red ( warning ) or green (success) line  
 
 <u>Quality of information submission</u>:
 
@@ -224,52 +228,44 @@ the user is informed with  tooltip if unacceptable entries are made.
 
 Character quantity is controlled for input fields  (5-15 characters)   users cannot enter a one letter username or password. 
 
+<u>Flash Messages</u>:
+Successful submission of registration or login triggers a message to the user 
+Incorrect entry of password or username triggers a user message without specifying which case
+Attempting to use a username that is already in use triggers a similar message 
+
 **Adding and Editing a recipe** 
 
 Submission of the add recipe or edit recipe form with a blank field  triggers an error message to the user 
 Validation is indicated to the user when filling input fields by use of a red ( warning ) or green colored line for the input 
 
-Character type  is controlled for each input field -- only numbers between 0-9 and alphabetical characters are accepted 
+<u>Character Type </u>:  is controlled for each input field -- only numbers between 0-9 and alphabetical characters are accepted 
 the user is informed with  tooltip if unacceptable entries are made. 
 
-Character quantity is controlled for input fields  (5-200 characters)   users cannot enter a recipe that is excessively long. 
+<u>Character Quantity</u> : is controlled for input fields  (5-200 characters)   users cannot enter a recipe that is excessively long.
 
-Buttons are clearly marked, only one option on add recipe form  to submit 
-2 buttons on edit recipe form user can choose to continue with edit or cancel 
+<u>Cancel action</u>    The edit recipe form has both a  cancel and edit button, in case the user changes their mind.
+
+<u>Buttons</u>: are clearly marked, only one option on add recipe form  to submit 
+2 buttons on edit recipe form user can choose to continue with edit or cancel
+
+<u>Flash Message</u>  Users receive a flash message to confirm that their edit was successful and that their recipe was added. 
+
 
 **Deleting a recipe**
 
-Accidental deletion of a recipe by a user 
-User receives a  modal warning that the deletion cannot be undone and asked whether they wish to proceed
-Originally the warning was given from a browser alert but my mentor suggested using a modal for more delivery control even if the modal warning involves more actions by the user 
+<u>Accidental deletion of a recipe</u> of a recipe by a user 
+by a user is avoided by the use of a modal triggered when the user clicks the delete button
+User receives a warning that the deletion cannot be undone and asked whether they wish to proceed 
+The user can cancel the deletion or proceed 
+<u>Flash message</u>  the user is notified with a flash  message when the deletion is confirmed
 
-**Conditional Access to site areas** 
-
-Users state is used to  restrict user access to site areas and activities :
-
-<u>Nav bar links</u> 
-
-Users that are not logged in, have access to signup, login logout and home menu links 
-Session users can access home, logout, add a recipe and recipe box links
-
-Admin users can access home, manage categories, add recipe, logout   
-
-<u>Recipe Buttons</u> 
-
-Edit and delete buttons are only displayed to recipe owners 
-
-##Defensive Design Features to be added
-
-Admin login is currently based on username which is open to bruteforce. 
+**Future defensive design to implement** 
+Admin login is currently based on username this is not ideal  
 A better solution is to adjust admin login to a  key:value pair in users section
-This allows for more than one admin login on the team. 
+This allows for more than one admin login on the team and is more secure.
 
 Salt and hash additions to the username and passwords are currently basic and for more security they should be improved.  
-
-
-
-
-​     
+    
 
 ##     Technologies Used
 
@@ -311,22 +307,45 @@ Salt and hash additions to the username and passwords are currently basic and fo
  [Testing](/TESTING.md)   
 
    
-   
-   
-    ## Defensive Design 
-    
-    
-    
-    
+  
     
     ## Security
-    
-    User Authorization and Authentication
-    
-    Flask uses Werkzeug for security features and the SnixSnax site makes use of the the standard built – in methods provided
-     generate_password_hash  and check_password_hash 
-    
-     hashing passwords means that a users pw is converted into another string which is one-way and practically impossible to reverse and for additional security it will then salt that string with random data. This provides basic but robust security to protect a users registration information
+
+- ####  Authentication
+
+  Flask uses Werkzeug for security features and the SnixSnax site makes use of the the standard built – in methods provided to secure users' passwords and username details: 
+   generate_password_hash  and check_password_hash 
+
+   Hashing passwords converts a user's pw from plain text into another string which is one-way and practically impossible to reverse and for additional security it will then salt that string with random data. 
+
+  This provides basic but robust security to protect a users registration information
+
+   **Authentication**
+
+  <u>Registration</u> Before the data the user types into the registration is added to the database it is checked to make sure that it does not already exist in the database 
+  If it does not exist then it is hashed 
+
+  <u>Login</u>
+
+  Users are authenticated on the basis of their registered username and password 
+
+  **Authorization**
+
+​          <u>Nav bar links</u> are conditional on the user state ( all users, session users or admin )
+​          Different sections of the website therefore have access protection   
+
+​         This is 
+​                   to give those users that have signed up and are logged in  (session users ) a level of exclusivity not available to all users
+​                   to encourage users to register  for the site.  
+​                  to provide more site security in the case of admin ( only admin are allowed to edit, add or delete categories)
+
+​         **All  Users**  have access to signup, login logout and home menu links 
+​         **Session users** can access home, logout, add a recipe and recipe box link
+​         **Admin** users can access home, manage categories, add recipe, logout   
+
+<u>  Recipe Buttons</u> 
+
+​       Edit and delete buttons are only displayed to the author of the recipe 
 
 
 ​    

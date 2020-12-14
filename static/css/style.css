@@ -127,7 +127,7 @@ footer {
     color: #fff;
 }
 
-@media screen and (min-width: 768px){
+@media only screen and (min-width: 768px){
 .hero-text{
  padding-top: 0px;   
    } 
