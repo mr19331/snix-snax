@@ -90,7 +90,7 @@ background-size: cover;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 15px;
+  font-size: 10px;
 }
 
 /* Text below search bar  */
@@ -111,12 +111,13 @@ background-size: cover;
   background: #f4f4f4;
 }
 
+/* Footer */
 
 footer {
     height: 200px;
     }
 
-/* Footer  */
+/*  Social Links in Footer  */
 
 .social-links li {
     display: inline-block;

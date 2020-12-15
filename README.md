@@ -11,7 +11,6 @@ The snacks are categorised under several popular headings - Sweet, Savoury, Glut
 Commission can be earned as an amazon.com associate from advertising snack recipe books  or cookware 
 Commission can also be earned from adding an ingredient shopping list for popular supermarkets ( Tesco, Ocado Sainsburys) so that users can quickly send a shopping request for the ingredients that they are missing 
 
-[[_TOC_]]
 
 ![](https://res.cloudinary.com/mr19331/image/upload/v1607680940/Mockup-Generator_ygxaxn.png)
 
@@ -22,6 +21,33 @@ Commission can also be earned from adding an ingredient shopping list for popula
 ### Project Flow Diagram
 
 ![]<img src="https://res.cloudinary.com/mr19331/image/upload/v1608022891/Project-Flow-Diagram_pqazqt.png" style="zoom:150%;" />
+
+- [**Goals of the website**](#--goals-of-the-website--)
+    + [User Goals](#user-goals)
+    + [Site Owner Goals](#site-owner-goals)
+- [UX](#ux)
+  * [**User Stories**](#--user-stories--)
+    + [Strategy](#strategy)
+    + [**Scope**](#--scope--)
+    + [**Structure**](#--structure--)
+    + [**Skeleton**](#--skeleton--)
+      - [**Wireframes**](#--wireframes--)
+      - [**Surface**](#--surface--)
+- [Features](#features)
+    + [Existing Features](#existing-features)
+    + [Features Left To Implement](#features-left-to-implement)
+- [Defensive Design](#defensive-design)
+- [Technologies Used](#technologies-used)
+  * [**Testing**](#--testing--)
+- [Security](#security)
+    + [Authentication](#authentication)
+  * [**Bugs /Problems during project development****](#--bugs--problems-during-project-development----)
+- [Deployment](#deployment)
+- [Credits](#credits)
+  * [Content](#content)
+  * [Media](#media)
+  * [Acknowledgements](#acknowledgements)
+
 
 
 
@@ -369,10 +395,14 @@ I had a problem on add_recipe.html template with the card-reveal action. The act
 for the session user to the card ,the card-reveal action stopped working . This was resolved with help from Tim the tutor who helped me to rearrange
 the code so that the modal was inside the statement but the card-reveal section outside. 
 
-Problems with the hero-image. The image disappeared completely  and showed on dev tools that there was an error to do with the linear gradient css. This was resolved by adding in the webkits for the different browser types.
+Problems with the hero-image. The image disappeared completely when I tried to add a media query and showed on dev tools that there was an error to do with the linear gradient css.
+ This was resolved by adding in the webkits for the different browser types.
+ 
 On dev tools the image looks correct for the mobile version but in real life on an i-phone the image is skewed. 
+Despite many efforts to correct this using CSS I still can't get the image to show correctly on the mobile version
 
-Despite many efforts to correct this using CSS I still can't get the image to show correctly on the mobile version.  
+Problems with media queries  I planned to adjust the size of the text and search bar in the mobile version using media queries but because it seemed to cause problems with the main image, I rearranged the text and the search and reset buttons instead. 
+   
 
 
 
@@ -515,7 +545,7 @@ Code snippets
 - The inspiration for this project  was  from [Delish.com](www.delish.com) and from [All Recipes](www.allrecipes.co.uk) and from [KIdspot.com.au]( KIdspot.com.au)
 - Privacy Policy was generated from [Free Privacy Policy](https://www.freeprivacypolicy.com/free-privacy-policy-generator/)
 - Adding the functools import and wraps for securing login was aided by  [Protecting Endpoints in Flask apps] (https://blog.tecladocode.com/protecting-endpoints-in-flask-apps-by-requiring-login/)
-
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
 
