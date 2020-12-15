@@ -1,8 +1,5 @@
 # Testing
-
-
-
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+.
 
 ## Code Testing    
 
@@ -76,7 +73,7 @@ This user can view  the home page and find recipes for snacks without signing up
 - ​        the search bar in the centre of the browser view  for  searching for  recipe(s)- accessed with one click 
 - ​        if no recipe results from the search - user receives a flash message "sorry no results for this search "
 - ​        the category section  on the home page for searching recipe categories - accessed with  image click 
-- ​        the "new recipe" section uploaded by club members - accessed with  image click
+
 
 This user can view how- to videos and click on  shopping adverts to purchase goods- one click access 
 This user can access the social media links on the site footer to get more information 
@@ -102,7 +99,7 @@ User can view privacy policy, contact us and about us pages to get information o
 **Possible Actions for this User :**
 User can search for recipes on the home page 
 using the search bar 
-or by category name 
+or by category name by clicking the image on the home page 
 or by clicking "new recipes"
 
 User can  register
@@ -135,35 +132,22 @@ Privacy Policy is available as a link in the footer
 About Us page and Contact Us page available as links in the footer 
 Social Media links are located in the footer section 
 
+**Version Testing**
 
+Chrome developer tools --on the Chrome browser was used constantly during development to add styles to conveniently try changes immediately and to check basic layout of the website and to check site responsiveness on different screen sizes
 
+Mozilla developer tools- used particularly to assess the site for accessibility in terms of text visibility ( contrast)
 
+**Display testing**
+Accessibility
 
+Used HTML5 semantic elements title, nav, footer, form, header, button, section to clarify elements for screen readers, search engines & developers
 
+Used mozilla developer tools to check readibility of text in terms of contrast
 
+Used alt tags to describe images in case browser can't load and for SEO purposes.
 
-|      |      |      |      |
-| :--- | :--: | ---- | ---- |
-|      |      |      |      |
-|      |      |      |      |
-|      |      |      |      |
-|      |      |      |      |
-|      |      |      |      |
-|      |      |      |      |
-|      |      |      |      |
-|      |      |      |      |
+Used simple text font for visibility
 
-
-
-
-
-
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-1. Contact form:
-   1. Go to the "Contact Us" page
-   2. Try to submit the empty form and verify that an error message about the required fields appears
-   3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-   4. Try to submit the form with all inputs valid and verify that a success message appears.
-
-**Cross browser testing**  browsers and screen sizes. 
+**Cross browser testing**  the Snix Snax Recipe Club site was tested on Chrome and Mozilla  for all 3 versions
+and on Safari for tablet and iphone versions  

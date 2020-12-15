@@ -11,7 +11,7 @@ The snacks are categorised under several popular headings - Sweet, Savoury, Glut
 Commission can be earned as an amazon.com associate from advertising snack recipe books  or cookware 
 Commission can also be earned from adding an ingredient shopping list for popular supermarkets ( Tesco, Ocado Sainsburys) so that users can quickly send a shopping request for the ingredients that they are missing 
 
-[TOC]
+[[_TOC_]]
 
 ![](https://res.cloudinary.com/mr19331/image/upload/v1607680940/Mockup-Generator_ygxaxn.png)
 
@@ -313,9 +313,9 @@ Salt and hash additions to the username and passwords are currently basic and fo
    
   
     
-    ## Security
+ - ## Security
 
-- ####  Authentication
+  ####  Authentication
 
   Flask uses Werkzeug for security features and the SnixSnax site makes use of the the standard built – in methods provided to secure users' passwords and username details: 
    generate_password_hash  and check_password_hash 
@@ -358,15 +358,16 @@ Salt and hash additions to the username and passwords are currently basic and fo
 
 ### **Bugs /Problems during project development**** 
 
- file app.py Line 64  Linting error  that will not go away 
-Linting errors on each template because the doctype is missing 
+In file app.py Line 64 there is a linting error  that will not go away 
+Linting errors exist on each template because the doctype is missing, this is because the jinja formatting cannot be read correctly. 
+The doctype for each template is introduced to the templates from base.html  
 
 Originally I used a delete confirm dropdown from the browser as part of the defensive design against accidental user deletion.
 On my mentor's suggestion I replaced this with the materialize modal instead, to ensure that the functionality was not browser dependent. 
 
 I had a problem on add_recipe.html template with the card-reveal action. The action was originally working but when I added the if statement
- for the session user to the card ,the card-reveal action stopped working . This was resolved with help from Tim the tutor who helped me to rearrange
-  the code so that the modal was inside the statement but the card-reveal section outside. 
+for the session user to the card ,the card-reveal action stopped working . This was resolved with help from Tim the tutor who helped me to rearrange
+the code so that the modal was inside the statement but the card-reveal section outside. 
 
 Problems with the hero-image. The image disappeared completely  and showed on dev tools that there was an error to do with the linear gradient css. This was resolved by adding in the webkits for the different browser types.
 On dev tools the image looks correct for the mobile version but in real life on an i-phone the image is skewed. 
@@ -410,7 +411,7 @@ The automatic deployment option on Heroku was used as follows :
 
 9. When the app is deployed( this will take a few minutes)  it will say "Your app was successfully deployed" and then you can click view to view the app 
 
-![](https://res.cloudinary.com/mr19331/image/upload/v1608021181/successful-Heroku_lf5yvm.p
+![](https://res.cloudinary.com/mr19331/image/upload/v1608021181/successful-Heroku_lf5yvm.png)
 
 
 
@@ -421,7 +422,7 @@ The following must be installed :
 
 ​     IDE  of choice 
 
-​    [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) 
+​- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) 
 
 - [PIP](https://pip.pypa.io/en/stable/) 
 - [Python3](https://www.python.org/doc/) 
