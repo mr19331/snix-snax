@@ -21,7 +21,7 @@ Commission can also be earned from adding an ingredient shopping list for popula
 
 ### Project Flow Diagram
 
-![](https://res.cloudinary.com/mr19331/image/upload/v1607767817/Project-Flow-Diagram2_lxzpm1.png)
+![]<img src="https://res.cloudinary.com/mr19331/image/upload/v1608022891/Project-Flow-Diagram_pqazqt.png" style="zoom:150%;" />
 
 
 
@@ -368,26 +368,51 @@ I had a problem on add_recipe.html template with the card-reveal action. The act
  for the session user to the card ,the card-reveal action stopped working . This was resolved with help from Tim the tutor who helped me to rearrange
   the code so that the modal was inside the statement but the card-reveal section outside. 
 
+Problems with the hero-image. The image disappeared completely  and showed on dev tools that there was an error to do with the linear gradient css. This was resolved by adding in the webkits for the different browser types.
+On dev tools the image looks correct for the mobile version but in real life on an i-phone the image is skewed. 
+
+Despite many efforts to correct this using CSS I still can't get the image to show correctly on the mobile version.  
+
+
+
 
 
 ## Deployment
 
-SnixSnax Recipe Club app used  [Heroku.com](www.heroku.com) for deployment from the development version in GitHub  
+SnixSnax Recipe Club app used  [Heroku.com](www.heroku.com) for deployment from the development version in GitHub 
+Before deploying the app some new files must be set up 
 
+- a requirements.text file      use the command pip3 freeze --local > requirements.txt file 
+- a Procfile so that Heroku knows what to run and how  use the command  echo web: python app.py >Procfile ( delete empty line at bottom of file )
+
+Now on Heroku.com  the new app was named and the country region selected. 
 The automatic deployment option on Heroku was used as follows :
 
-1. The github repository must be named and Heroku authorized
+1. The github repository was named and Heroku authorized
 
-2. Go to  Heroku settings, and then to Reveal config vars and  enter the  IP, PORT , SECRET_KEY, MONGO_URI and MONGO_DBNAME with values  so that Heroku has access to them.(this is necessary because these variables are hidden in our code and Heroku has to be able to read them) 
+2. Go to  Heroku settings, and then to Reveal config vars
+![](https://res.cloudinary.com/mr19331/image/upload/v1608021119/Deploying-a-Flask-App-on-Heroku-Config_vars_tmuav2.png)
 
-3.   Ensure that all files including Procfile and requirements.txt  are pushed to git so  the development version is up to date 
+3. Enter the  IP, PORT , SECRET_KEY, MONGO_URI and MONGO_DBNAME with values  so that Heroku has access to them.
+ (this is necessary because these variables are hidden in our code and Heroku has to be able to read them) 
 
-    4.When all updates to GitHub are complete simply click "automatic deployment "
+4.Click "Save Changes"
 
-4. [It]() is also possible to use the manual  deployment option and select "master "
+5. Ensure that all files including Procfile and requirements.txt  are and  all code pushed to the master branch. Then on Heroku, go to the Deploy tab.
 
-5. When the app is deployed  it will say "Your app was successfully deployed" and then you can click view 
-    to view the app 
+6. Choose the repository that contains the app and then hit connect.to git so  the development version is up to date When all updates to GitHub are complete simply click "automatic deployment "
+
+ Automatic deployment can be enabled to have changes to the Github master be displayed on Heroku as they are pushed. For this method, there must always be a working master branch.
+
+7. [It]() is also possible to use the manual  deployment option and select "master "
+
+8. Build logs will begin to populate a console on the page. Notice that Heroku looks for a requirements.txt file first
+
+9. When the app is deployed( this will take a few minutes)  it will say "Your app was successfully deployed" and then you can click view to view the app 
+
+![](https://res.cloudinary.com/mr19331/image/upload/v1608021181/successful-Heroku_lf5yvm.p
+
+
 
     ###Running a Local Version of the App
 
