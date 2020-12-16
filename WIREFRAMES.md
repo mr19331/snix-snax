@@ -40,7 +40,8 @@
 
 ## Desktop Version
 
-![Desktop-Home-Page]https://res.cloudinary.com/mr19331/image/upload/v1608130683/Desktop-Home-Page_hicoz5.png)
+![Desktop-Home-Page](https://res.cloudinary.com/mr19331/image/upload/v1608130683/Desktop-Home-Page_hicoz5.png)
+
 
 ![Register and Login Desktop Version](https://res.cloudinary.com/mr19331/image/upload/v1606134688/Register-and-Login-Desktop_aoufyp.png)
 
@@ -48,11 +49,14 @@
 
 ![Categ-page-Desktop-Version](https://res.cloudinary.com/mr19331/image/upload/v1608131056/Categ-page-Desktop-Version_nfpdoi.png)
 
-Add Recipe Page Desktop Version
+​     **Add Recipe Page** 
+
 ![Add Recipe Page Desktop ](https://res.cloudinary.com/mr19331/image/upload/v1606134688/Add-Recipe-Page-Desktop_sjbz0c.png)
 
-Edit Recipe Page Desktop Version
-![ ](https://res.cloudinary.com/mr19331/image/upload/v1606395241/Edit-Recipe-Page-Desktop_bq9ins.png)
+
+   **Edit Recipe Page** 
+
+![Edit Recipe Page ](https://res.cloudinary.com/mr19331/image/upload/v1606395241/Edit-Recipe-Page-Desktop_bq9ins.png)
 
 ## Admin pages 
 
