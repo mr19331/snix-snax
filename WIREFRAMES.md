@@ -12,35 +12,35 @@
 
 
 
-![](C:\Users\Maria\Pictures\Imgs-wireframes MS3\Mobile-Home-Page.png)
+![](https://res.cloudinary.com/mr19331/image/upload/v1608130096/Mobile-Home-Page_fbp6fj.png)
 
 
 
-![](C:\Users\Maria\Pictures\Imgs-wireframes MS3\Mobile-Register-and-Login.png)
+![](https://res.cloudinary.com/mr19331/image/upload/v1608130161/Mobile-Register-and-Login_bt513b.png)
 
-![Mobile-Add and Edit-Recipe](C:\Users\Maria\Pictures\Imgs-wireframes MS3\Mobile-Add and Edit-Recipe.png)
+![](https://res.cloudinary.com/mr19331/image/upload/v1608130139/Mobile-Add_and_Edit-Recipe_j2psob.png)
 
-![Recipe-Box-and-Categ-page-Mobile-Version](C:\Users\Maria\Pictures\Imgs-wireframes MS3\Recipe-Box-and-Categ-page-Mobile-Version.png)
+![](https://res.cloudinary.com/mr19331/image/upload/v1608130383/Recipe-Box-and-Categ-page-Mobile-Version_efjoij.png)
 
 
 
 ## Tablet Version
 
-![Tablet-Home-Page](C:\Users\Maria\Pictures\Imgs-wireframes MS3\Tablet-Home-Page.png)
+![](https://res.cloudinary.com/mr19331/image/upload/v1608130430/Tablet-Home-Page_os1bqo.png)
 
 
 
-![Tablet-Register-and-Login](C:\Users\Maria\Pictures\Imgs-wireframes MS3\Tablet-Register-and-Login.png)
+![](https://res.cloudinary.com/mr19331/image/upload/v1608130492/Tablet-Register-and-Login_nlraul.png)
 
-![Tablet-Add and Edit-Recipe](C:\Users\Maria\Pictures\Imgs-wireframes MS3\Tablet-Add and Edit-Recipe.png)
+![](https://res.cloudinary.com/mr19331/image/upload/v1608130576/Tablet-Add_and_Edit-Recipe_jz8oh2.png)
 
 
 
-![Recipe-Box-and-Categ-page-Tablet-Version](C:\Users\Maria\Pictures\Imgs-wireframes MS3\Recipe-Box-and-Categ-page-Tablet-Version.png)
+![Recipe-Box-and-Categ-page-Tablet-Version](https://res.cloudinary.com/mr19331/image/upload/v1608130634/Recipe-Box-and-Categ-page-Tablet-Version_nzicak.png)
 
 ## Desktop Version
 
-![Desktop-Home-Page](C:\Users\Maria\Pictures\Imgs-wireframes MS3\Desktop-Home-Page.png)
+![Desktop-Home-Page]https://res.cloudinary.com/mr19331/image/upload/v1608130683/Desktop-Home-Page_hicoz5.png()
 
 ![Register and Login Desktop Version](https://res.cloudinary.com/mr19331/image/upload/v1606134688/Register-and-Login-Desktop_aoufyp.png)
 
