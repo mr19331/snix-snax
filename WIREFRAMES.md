@@ -40,17 +40,19 @@
 
 ## Desktop Version
 
-![Desktop-Home-Page]https://res.cloudinary.com/mr19331/image/upload/v1608130683/Desktop-Home-Page_hicoz5.png()
+![Desktop-Home-Page]https://res.cloudinary.com/mr19331/image/upload/v1608130683/Desktop-Home-Page_hicoz5.png)
 
 ![Register and Login Desktop Version](https://res.cloudinary.com/mr19331/image/upload/v1606134688/Register-and-Login-Desktop_aoufyp.png)
 
 ![Recipe Box](https://res.cloudinary.com/mr19331/image/upload/v1606134688/Recipe-Box_Desktop_bjmiw6.png)
 
-![Categ-page-Desktop-Version](C:\Users\Maria\Pictures\Imgs-wireframes MS3\Categ-page-Desktop-Version.png)
+![Categ-page-Desktop-Version](https://res.cloudinary.com/mr19331/image/upload/v1608131056/Categ-page-Desktop-Version_nfpdoi.png)
 
+Add Recipe Page Desktop Version
 ![Add Recipe Page Desktop ](https://res.cloudinary.com/mr19331/image/upload/v1606134688/Add-Recipe-Page-Desktop_sjbz0c.png)
 
-![Edit Recipe Page ](https://res.cloudinary.com/mr19331/image/upload/v1606134688/Edit-Recipe-Page_Desktop_ybonm5.png)
+Edit Recipe Page Desktop Version
+![ ](https://res.cloudinary.com/mr19331/image/upload/v1606395241/Edit-Recipe-Page-Desktop_bq9ins.png)
 
 ## Admin pages 
 
