@@ -7,14 +7,34 @@ Snacks  are a staple for lunch-boxes, hikes and TV-time, and now they are import
 **Users of  the SnixSnax site**  can register to  share their favourite snack recipes, can create, edit and delete their own recipes, and view a library of recipes ( called a Recipe Box) they can  use and store other people's recipes, watch how to videos and buy cookbooks and cooking tools.
 The snacks are categorised under several popular headings - Sweet, Savoury, Gluten- Free, Kids and Popular. 
 
-**Owners of the SnixSnax  site** have several opportunities for monetization
+**Owners of the SnixSnax site** have several opportunities for monetization
 Commission can be earned as an amazon.com associate from advertising snack recipe books  or cookware 
 Commission can also be earned from adding an ingredient shopping list for popular supermarkets ( Tesco, Ocado Sainsburys) so that users can quickly send a shopping request for the ingredients that they are missing 
 
 
 ![](https://res.cloudinary.com/mr19331/image/upload/v1607680940/Mockup-Generator_ygxaxn.png)
 
-### Directory Layout for Project 
+### link to the live website on Heroku project [Snix-Snax Recipe Club](https://recipe-manager-project.herokuapp.com/)
+
+## Admin login is username admin pw 123xyz
+
+### Concepts used in the Snix Snax Recipe Club project 
+
+The website makes use of the **CRUD** model . CRUDis the acronym that refers to the four basic types of functionality Create, Read, Update and Delete
+ Each of the four operations  is a request sent by a user that is relayed to the database in order to change the data in it or retrieve some part of it 
+
+ **Create** is the operation of adding a new record to the data store – the user of SnixSnax site can add their own recipe 
+ **Update** is the operation of changing one or more fields in existing records, the SnixSnax user can edit the recipe that they added.  
+ **Delete** is removing a record – user can delete the recipe that they added. 
+ **Read** is the most common CRUD operation – it is a request to retrieve information from the data without changing it – SnixSnax users can read the recipes on the website .
+
+Using the CRUD model allows the data that is stored to be shared and used by website users and provides a more valuable user experience. The user gets to actively participate and the website is  dynamic and constantly changing. 
+
+**DRY** is the acronym for Don’t Repeat Yourself this refers to the coding concept of creating code once and then reusing it to reduce time and labour and this has been used throughout the Snix Snax project 
+
+The jinja formatting used in Flask allows a base template (base.html) to be constructed with code common to each of the pages. 
+ The base template  in the Snixsnax site, supplies the navbar, side navbar ,navigation links and the footer to the remaining templates providing uniformity throughout the site and less work for the developer. 
+ Category_type.html is a template that contains recipes filtered by category and makes use of only one page to display 5 different categories and respective recipes. 
 
 
 
@@ -73,7 +93,7 @@ To monetize the site so that users will purchase goods or take actions that crea
 
  To have a separate  admin-only section on the site for  team members  to edit or add categories etc.   
 
-
+### Project Concept 
 
 ## UX
 
@@ -118,6 +138,7 @@ To monetize the site so that users will purchase goods or take actions that crea
 -  I expect to be notified if I complete an action successful and to be given a warning in case I accidentally choose to delete something
 -  I want the site to be stable and robust and function without problems 
 -  I want to monetize the site so that it creates revenue 
+
 
 
 
