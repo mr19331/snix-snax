@@ -17,29 +17,32 @@ Python using [Python Validator](http://pep8online.com/)
 
 
 
-## Manual Testing 
+## Manual Testing of Site Links 
 
-![Links-Testing](C:\Users\Maria\Documents\CodInstitute\MS3\Links-Testing.png)
+![Links-Testing](https://res.cloudinary.com/mr19331/image/upload/v1608132915/Links_Testing_zmy5ww.png)
+
+
+
+------
+## Manual Testing of Site Buttons 
+
+![Button-Testing](https://res.cloudinary.com/mr19331/image/upload/v1608132935/Button_Testing_nrnztt.png)
 
 
 
 ------
 
-![Button-Testing2](C:\Users\Maria\Documents\CodInstitute\MS3\Button-Testing2.png)
+## Manual Testing of Forms for All Users 
 
+![Form-Testing](https://res.cloudinary.com/mr19331/image/upload/v1608132957/Form_Testing_All_Users_mrvejz.png)
 
+## Manual Testing of Forms for Logged In Users
 
-------
+![Form-testing](https://res.cloudinary.com/mr19331/image/upload/v1608132977/Form_Testing_Logged_in_users_uhr8wm.png)
 
+## Manual Testing of  Forms for Admin Users 
 
-
-![Form-Testing1](C:\Users\Maria\Documents\CodInstitute\MS3\Form-Testing1.png)
-
-
-
-![Form-testing2](C:\Users\Maria\Documents\CodInstitute\MS3\Form-testing2.png)
-
-![Form-test3](C:\Users\Maria\Documents\CodInstitute\MS3\Form-test3.png)
+![Form-test](https://res.cloudinary.com/mr19331/image/upload/v1608132996/Form_Testing_Admin_users_yrgj11.png)
 
 
 
