@@ -14,27 +14,10 @@ Commission can also be earned from adding an ingredient shopping list for popula
 
 ![](https://res.cloudinary.com/mr19331/image/upload/v1607680940/Mockup-Generator_ygxaxn.png)
 
-### link to the live website on Heroku project [Snix-Snax Recipe Club](https://recipe-manager-project.herokuapp.com/)
+### Link to the live website on Heroku [Snix-Snax Recipe Club](https://recipe-manager-project.herokuapp.com/)
 
-## Admin login is username admin pw 123xyz
+### Admin login  username admin pw 123xyz
 
-### Concepts used in the Snix Snax Recipe Club project 
-
-The website makes use of the **CRUD** model . CRUDis the acronym that refers to the four basic types of functionality Create, Read, Update and Delete
- Each of the four operations  is a request sent by a user that is relayed to the database in order to change the data in it or retrieve some part of it 
-
- **Create** is the operation of adding a new record to the data store – the user of SnixSnax site can add their own recipe 
- **Update** is the operation of changing one or more fields in existing records, the SnixSnax user can edit the recipe that they added.  
- **Delete** is removing a record – user can delete the recipe that they added. 
- **Read** is the most common CRUD operation – it is a request to retrieve information from the data without changing it – SnixSnax users can read the recipes on the website .
-
-Using the CRUD model allows the data that is stored to be shared and used by website users and provides a more valuable user experience. The user gets to actively participate and the website is  dynamic and constantly changing. 
-
-**DRY** is the acronym for Don’t Repeat Yourself this refers to the coding concept of creating code once and then reusing it to reduce time and labour and this has been used throughout the Snix Snax project 
-
-The jinja formatting used in Flask allows a base template (base.html) to be constructed with code common to each of the pages. 
- The base template  in the Snixsnax site, supplies the navbar, side navbar ,navigation links and the footer to the remaining templates providing uniformity throughout the site and less work for the developer. 
- Category_type.html is a template that contains recipes filtered by category and makes use of only one page to display 5 different categories and respective recipes. 
 
 
 
@@ -45,6 +28,7 @@ The jinja formatting used in Flask allows a base template (base.html) to be cons
 - [**Goals of the website**](#--goals-of-the-website--)
     + [User Goals](#user-goals)
     + [Site Owner Goals](#site-owner-goals)
+    + [Project Concepts](#project-concepts)
 - [UX](#ux)
   * [**User Stories**](#--user-stories--)
     + [Strategy](#strategy)
@@ -52,7 +36,7 @@ The jinja formatting used in Flask allows a base template (base.html) to be cons
     + [**Structure**](#--structure--)
     + [**Skeleton**](#--skeleton--)
       - [**Wireframes**](#--wireframes--)
-      - [**Surface**](#--surface--)
+    + [**Surface**](#--surface--)
 - [Features](#features)
     + [Existing Features](#existing-features)
     + [Features Left To Implement](#features-left-to-implement)
@@ -77,7 +61,7 @@ The jinja formatting used in Flask allows a base template (base.html) to be cons
 
 To  access an online source of  recipes for  snacks . 
 To find snack recipes easily by searching or by category
-.To be able to add a recipe to the site and to be able to edit or delete those recipes
+To be able to add a recipe to the site and to be able to edit or delete those recipes
 To store a library of chosen or added recipes and to be able to access them easily.
 To watch how-to videos for cooking techniques 
 To buy cooking related gifts or tools for cooking
@@ -93,7 +77,24 @@ To monetize the site so that users will purchase goods or take actions that crea
 
  To have a separate  admin-only section on the site for  team members  to edit or add categories etc.   
 
-### Project Concept 
+### Project Concepts  
+
+The website makes use of the **CRUD** model. CRUD is the acronym that refers to the four basic types of functionality Create, Read, Update and Delete
+ Each of the four operations is a request sent by a user that is relayed to the database in order to change the data in it or retrieve some part of it 
+
+ **Create** is the operation of adding a new record to the data store – the user of SnixSnax site can add their own recipe 
+ **Update** is the operation of changing one or more fields in existing records, the SnixSnax user can edit the recipe that they added.  
+ **Delete** is removing a record – user can delete the recipe that they added. 
+ **Read** is the most common CRUD operation – it is a request to retrieve information from the data without changing it – SnixSnax users can read the recipes on the website .
+
+Using the CRUD model allows the data that is stored to be shared and used by website users and provides a more valuable user experience. The user gets to actively participate and the website is  dynamic and constantly changing. 
+
+**DRY** is the acronym for Don’t Repeat Yourself this refers to the coding concept of creating code once and then reusing it to reduce time and labour and this has been used throughout the Snix Snax project 
+
+The jinja formatting used in Flask allows a base template (base.html) to be constructed with code common to each of the pages. 
+ The base template  in the Snixsnax site, supplies the navbar, side navbar ,navigation links and the footer to the remaining templates providing uniformity throughout the site and less work for the developer. 
+ Category_type.html is a template that contains recipes filtered by category and makes use of only one page to display 5 different categories and respective recipes. 
+
 
 ## UX
 
