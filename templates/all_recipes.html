@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
+<!-- page heading -->
 <h3 class="red-text center-align text-shadow">Your SnixSnax Recipe Box!</h3>
 <h5 class="grey-text darken-3 center-align">Click the image for recipe details, don't forget to favourite the recipes you love!</h5>
 
@@ -51,7 +52,7 @@
                         </div>
                         {% endif %}
                     </div>
-
+                    <!-- information for reverse of card  -->
                     <div class="card-reveal">
                         <span class="card-title"> <strong>{{recipe.recipe_name}}</strong><i class="right">Close</i></span>
                         <p>{{recipe.recipe_ingredients}}</p>
@@ -65,8 +66,9 @@
 
 {% else %}
 
-    <!-- if no results for search query -->
+    <!-- flash message if no results for search query -->
 
     <h3 class="red-text center-align text-shadow">Sorry! No Results for Search</h3>
+
 {% endif %}
 {% endblock %}

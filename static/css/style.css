@@ -1,154 +1,162 @@
+
+/* styling for text  */
+
 .text-shadow {
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
+
+
 /* Flash Messages  */
 
-.flashes h4{
-    line-height: 2;
+.flashes h4 {
+	line-height: 2;
 }
+
+
 /* Button Styling */
 
-.btn-small{
-    margin: 5px;
-    margin-right: 10px;
+.btn-small {
+	margin: 5px;
+	margin-right: 10px;
 }
+
+
 /* Nav Bar  */
 
 nav ul a {
-    color: #f00; 
+	color: #f00;
 }
 
-.collapsible-header .col strong{
-    margin: 5px;
-    line-height: 42px;
+.collapsible-header .col strong {
+	margin: 5px;
+	line-height: 42px;
 }
+
+
 /* Hero Image and Text  */
 
 .hero-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent), 
-    url("https://res.cloudinary.com/mr19331/image/upload/v1606984437/veg-crisps-1500x1125_hbtycp.jpg")
- no-repeat center center fixed;
- -webkit-background-size: cover;
- -moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
- width: 100%;
- height: 100vh;
- }
-
- .hero-text  {
-  padding-top: 5px;
+	background: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url("https://res.cloudinary.com/mr19331/image/upload/v1606984437/veg-crisps-1500x1125_hbtycp.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
 }
+
+.hero-text {
+	padding-top: 5px;
+}
+
 
 /* Search Bar  */
 
 .card-search-panel {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(255, 255, 255, 0.4);
-  max-width: 550px;
-   width: 100%; 
-   padding: 5px; 
-  border-radius: 5px;
-  border: 1px solid grey;
-  display: flex;
-  justify-content: space-between;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(255, 255, 255, 0.4);
+	max-width: 550px;
+	width: 100%;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid grey;
+	display: flex;
+	justify-content: space-between;
 }
+
 .search-wrapper .input {
-  width: 75%;
-  padding: 15px 20px;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
+	width: 75%;
+	padding: 15px 20px;
+	border: none;
+	border-radius: 5px;
+	font-weight: bold;
 }
 
 .search-wrapper.input.input {
-  color: black;
+	color: black;
 }
+
 
 /* Search Bar Buttons & icon */
 
 .searchbtn {
-  background: red;
-  width: 5%;
-  border-radius: 0px;
-  position: relative;
-  cursor: pointer;
+	background: red;
+	width: 5%;
+	border-radius: 0px;
+	position: relative;
+	cursor: pointer;
 }
+
 .resetbtn {
-  background: grey;
-  width: 5%;
-  padding: 0px;
-  border-radius: 0px;
-  position: relative;
-  cursor: pointer;
+	background: grey;
+	width: 5%;
+	padding: 0px;
+	border-radius: 0px;
+	position: relative;
+	cursor: pointer;
 }
+
 .searchbtn .fas {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 10px;
 }
+
 
 /* Text below search bar  */
 
 .text-box {
-  width: 50%;
-  font-weight: 300;
-  /* background: rgba(0, 0, 0, 0.5); */
-  position: absolute;
-  z-index: 999;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-  top: 60%;
+	width: 50%;
+	font-weight: 300;
+	/* background: rgba(0, 0, 0, 0.5); */
+	position: absolute;
+	z-index: 999;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	top: 60%;
 }
+
 .image-container {
-  background: #f4f4f4;
+	background: #f4f4f4;
 }
+
 
 /* Footer */
 
 footer {
-    height: 200px;
-    }
+	height: 200px;
+}
+
 
 /*  Social Links in Footer  */
 
 .social-links li {
-    display: inline-block;
-    text-align: center;
-    padding: 4px;
+	display: inline-block;
+	text-align: center;
+	padding: 4px;
 }
 
 .social-links li a {
-    border: 1px solid #fff;
-    border-radius: 50%;
-    color: #fff;
-    display: inline-block;
-    font-size: 30px;
-    height: 40px;
-    line-height: 32px;
-    padding: 4px 8px;
-    width: 40px;
-    transition: .5s;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	color: #fff;
+	display: inline-block;
+	font-size: 30px;
+	height: 40px;
+	line-height: 32px;
+	padding: 4px 8px;
+	width: 40px;
+	transition: .5s;
 }
 
 .social-links li a:hover {
-    background: #757575;
-    color: #fff;
-}
-
-
-/* media query */
-
-@media screen and (max-width 768px) {
-    .hero-text{
-      padding-top: 0px; 
-      font-size: 50%; 
-    }
+	background: #757575;
+	color: #fff;
 }

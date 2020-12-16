@@ -106,6 +106,19 @@ To monetize the site so that users will purchase goods or take actions that crea
 - I want to see confirmation when I have successfully completed any of these actions 
 - If I decide to delete one of my recipes I expect a warning in case I clicked the button accidentally 
 
+**As the website owner/admin user:**
+
+-  I want  the website to  provide valuable information for users so that they return frequently
+-  I want users to stay on the site for as long as possible and to contribute fresh content to the site. 
+-  I want the personal information provided by users to be secure and private
+-  I expect the users of the site to be able to contact admin if they wish. 
+-  I expect admin sections of the site to be secure and have  protected access
+-  I want to be able to login and logout and to be able to easily and quickly add, edit or delete the information that is regulated by admin.
+-  I want the processes of the site for admin and other users to be clearly indicated and laid out so that each action is easily navigated. 
+-  I expect to be notified if I complete an action successful and to be given a warning in case I accidentally choose to delete something
+-  I want the site to be stable and robust and function without problems 
+-  I want to monetize the site so that it creates revenue 
+
 
 
 #### Strategy

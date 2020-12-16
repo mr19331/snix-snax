@@ -1,99 +1,103 @@
 {% extends "base.html" %}
 {% block content %}
+
+
+<!-- hero section -->
 <div class="hero-container">
     <div class="hero-img">
-    <div class="hero-text">  
-   <h3 class="hero-text white-text center-align">SnixSnax Recipe Club</h3>
-   <h5 class="white-text center-align"<strong>Find A Recipe....</strong></h5>
-</div>
-   <!-- search bar -->
-
-   <div class="row card-search-panel center-align  lighten-5">
-      <form action="{{ url_for('search') }}" method="post" class="col s12 ">
-         <div class="row valign-wrapper center-align">
-            <div class="input-field col s8 ">
-               <i class="fas fa-search prefix"></i>
-               <input type="text" name="query" id="query" minlength="3" class="validate" required>
-               <label for="query" class="black-text">Search </label>
-            </div>
-            <div>
-            <button type="submit" class=" btn-small grey darken-1 btn text-shadow">Search
-            </button>
-            <a href="{{url_for('index')}}" class=" btn-small red btn text-shadow">Reset</a>
-            </div>
-         </div>
-       </form>
-   </div>
-  
-   <div class=" row text-box">
-      <div class="col s12">
-         <h5 class= "white-text "><strong>Join The Club </strong></h5>
-         <h6 class="white-text hide-on-small-only " ><strong> Add your own Recipes! Keep Favourite Recipes in your Recipe Box </strong></h6>
-         <a href="{{url_for('register') }}"
-            class="btn large red white-text"
-            ><strong>Join Us!</strong></a>
+        <div class="hero-text">
+            <h3 class="hero-text white-text center-align">SnixSnax Recipe Club</h3>
+            <h5 class="white-text center-align"><strong>Find A Recipe....</strong></h5>
         </div>
-     </div> 
-   </div>
-</div> 
-<!-- image-gallery adapted from codepen -->
-<div class=" image-container">
-   <h4 class="center-align"><strong> Recipe Categories</strong><br></h4>
-   <p class= "center-align">... for lunchbox, hiking, working from home!</p>
-   <div class="row">
-      <div class="col s6 m6 l3">
-         <a href="{{url_for('category_type', category_id='Sweet') }}">
-            <img src="https://res.cloudinary.com/mr19331/image/upload/v1606561821/chocomarzipan_bites_yonfmz.png" alt="chocolate-marzipan" class="materialboxed responsive-img">
-            <h5 class= "center-align black-text">Sweet </h5>
-         </a>
-      </div>
-      <div class="col s6 m6 l3">
-         <a href="{{url_for('category_type', category_id='Low Calorie') }}">
-            <img src="https://res.cloudinary.com/mr19331/image/upload/v1607074759/Frozen-Grapes_l068cx.jpg" alt="frozen-grapes" class="materialboxed responsive-img">
-            <h5 class= "center-align black-text">Low Cal </h5>
-         </a>
-      </div>
-      
+        <!-- search bar -->
 
-      <div class="col s6 m6 l3 ">
-         <a href="{{url_for('category_type', category_id='Kids') }}"> 
-            <img src="https://res.cloudinary.com/mr19331/image/upload/v1607073985/rollups-601440-1_tcywyn.jpg" alt="fruit-rollups" class="materialboxed responsive-img">
-            <h5 class= "center-align black-text">Kids </h5>
-         </a> 
-      </div>
-      <div class="col s6 m6 l3">
-         <a href="{{url_for('category_type', category_id='Savoury') }}">
-            <img src="https://res.cloudinary.com/mr19331/image/upload/v1606561860/Savoury_Seeds_wijfwl.png" alt="savoury-seeds" class="materialboxed responsive-img">
-            <h5 class= "center-align black-text">Savoury</h5>
-         </a>
-      </div>
-      </div>
-   </div>
+        <div class="row card-search-panel center-align  lighten-5">
+            <form action="{{ url_for('search') }}" method="post" class="col s12 ">
+                <div class="row valign-wrapper center-align">
+                    <div class="input-field col s8 ">
+                        <i class="fas fa-search prefix"></i>
+                        <input type="text" name="query" id="query" minlength="3" class="validate" required>
+                        <label for="query" class="black-text">Search </label>
+                    </div>
+                    <div>
+                        <button type="submit" class=" btn-small grey darken-1 btn text-shadow">Search
+                        </button>
+                        <a href="{{url_for('index')}}" class=" btn-small red btn text-shadow">Reset</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class=" row text-box">
+            <div class="col s12">
+                <h5 class="white-text "><strong>Join The Club </strong></h5>
+                <h6 class="white-text hide-on-small-only "><strong> Add your own Recipes! Keep Favourite Recipes in your
+                        Recipe Box </strong></h6>
+                <a href="{{url_for('register') }}" class="btn large red white-text"><strong>Join Us!</strong></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- image-gallery adapted from codepen snippet -->
+<div class=" image-container">
+    <h4 class="center-align"><strong> Recipe Categories</strong><br></h4>
+    <p class="center-align">... for lunchbox, hiking, working from home!</p>
+    <div class="row">
+        <div class="col s6 m6 l3">
+            <a href="{{url_for('category_type', category_id='Sweet') }}">
+                <img src="https://res.cloudinary.com/mr19331/image/upload/v1606561821/chocomarzipan_bites_yonfmz.png"
+                    alt="chocolate-marzipan" class="materialboxed responsive-img">
+                <h5 class="center-align black-text">Sweet </h5>
+            </a>
+        </div>
+        <div class="col s6 m6 l3">
+            <a href="{{url_for('category_type', category_id='Low Calorie') }}">
+                <img src="https://res.cloudinary.com/mr19331/image/upload/v1607074759/Frozen-Grapes_l068cx.jpg"
+                    alt="frozen-grapes" class="materialboxed responsive-img">
+                <h5 class="center-align black-text">Low Cal </h5>
+            </a>
+        </div>
+        <div class="col s6 m6 l3 ">
+            <a href="{{url_for('category_type', category_id='Kids') }}">
+                <img src="https://res.cloudinary.com/mr19331/image/upload/v1607073985/rollups-601440-1_tcywyn.jpg"
+                    alt="fruit-rollups" class="materialboxed responsive-img">
+                <h5 class="center-align black-text">Kids </h5>
+            </a>
+        </div>
+        <div class="col s6 m6 l3">
+            <a href="{{url_for('category_type', category_id='Savoury') }}">
+                <img src="https://res.cloudinary.com/mr19331/image/upload/v1606561860/Savoury_Seeds_wijfwl.png"
+                    alt="savoury-seeds" class="materialboxed responsive-img">
+                <h5 class="center-align black-text">Savoury</h5>
+            </a>
+        </div>
+    </div>
+</div>
 
 <!-- video section  -->
-<div class= "video-section">
-   <h4 class="center-align"><strong> Snax How To Videos</strong><br></h4>
-   <p class= "center-align"> Learn How....to make Delicious Snax Treats!</p>
-   <div class = " row">
-      <div class="col s12 l4">
-         <div class="  video-container">
-            <iframe width="400" height="300" src="https://www.youtube.com/embed/SQrYOK_RVkc"></iframe>
-         </div>
-      </div>
-      <div class="col s12 l4">
-         <div class="  video-container">
-            <iframe width="400" height="300" src="https://www.youtube.com/embed/1UvM3htSxME"></iframe>
-         </div>
-      </div>
-      <div class="col s12 l4">
-         <div class=" video-container">
-            <iframe width="400" height="300" src="https://www.youtube.com/embed/rTkol3a8QXE"></iframe>
-         </div>
-      </div>
-   </div>
+<div class="video-section">
+    <h4 class="center-align"><strong> Snax How To Videos</strong><br></h4>
+    <p class="center-align"> Learn How....to make Delicious Snax Treats!</p>
+    <div class=" row">
+        <div class="col s12 l4">
+            <div class="  video-container">
+                <iframe width="400" height="300" src="https://www.youtube.com/embed/SQrYOK_RVkc"></iframe>
+            </div>
+        </div>
+        <div class="col s12 l4">
+            <div class="  video-container">
+                <iframe width="400" height="300" src="https://www.youtube.com/embed/1UvM3htSxME"></iframe>
+            </div>
+        </div>
+        <div class="col s12 l4">
+            <div class=" video-container">
+                <iframe width="400" height="300" src="https://www.youtube.com/embed/rTkol3a8QXE"></iframe>
+            </div>
+        </div>
+    </div>
 </div>
 
 
 
 
-   {% endblock %}
+{% endblock %}

@@ -132,6 +132,42 @@ Privacy Policy is available as a link in the footer
 About Us page and Contact Us page available as links in the footer 
 Social Media links are located in the footer section 
 
+3 **As the website owner/admin user:**
+
+-  I want  the website to  provide valuable information for users so that they return frequently
+-  I want users to stay on the site for as long as possible and to contribute fresh content to the site. 
+-  I want the personal information provided by users to be secure and private
+-  I expect the users of the site to be able to contact admin if they wish. 
+-  I expect admin sections of the site to be secure and have  protected access
+-  I want to be able to login and logout and to be able to easily and quickly add, edit or delete the information that is regulated by admin.
+-  I want the processes of the site for admin and other users to be clearly indicated and laid out so that each action is easily navigated. 
+-  I expect to be notified if I complete an action successful and to be given a warning in case I accidentally choose to delete something
+-  I want the site to be stable and robust and function without problems 
+-  I want to monetize the site so that it creates revenue 
+
+** Possible Actions for this User:**
+
+Allowing users to contribute their own recipes will attract users to the site.
+
+Site users will stay on the site longer by adding their own recipes and editing them, viewing new recipes , viewing items for sale, and viewing videos.
+
+Personal information provided  by users is salted and hashed to maintain security.
+
+Users can contact the admin team from company information on the Contact page
+ 
+Login, logout actions are clearly indicated and simple in format
+
+Problems such as blank fields are indicated by red validation line in the input field and a message to indicate errors and success.
+
+Category editing is an admin only section and other users do not have access -- categories can be edited, added or deleted, using button features all of which are clearly marked.
+
+Deletion of a category requires confirmation before the action is completed. 
+Actions by admin users receive a success or error message 
+
+Monetization of the site is possible in several different ways
+the site can allow other related businesses to advertise or the site owner can advertise related goods and earn commission. 
+Commission can also be earned by running a related Youtube channel and advertising . 3    
+
 **Version Testing**
 
 Chrome developer tools --on the Chrome browser was used constantly during development to add styles to conveniently try changes immediately and to check basic layout of the website and to check site responsiveness on different screen sizes

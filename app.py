@@ -73,10 +73,10 @@ def login():
             # ensure hashed password matches user input
             if check_password_hash(
                     existing_user["password"], request.form.get("password")):
-                        session["user"] = request.form.get("username").lower()
-                        flash("Welcome, {}".format(
+                session["user"] = request.form.get("username").lower()
+                flash("Welcome, {}".format(
                             request.form.get("username")))
-                        return redirect(url_for(
+                return redirect(url_for(
                             "profile", username=session["user"]))
             else:
                 # invalid password match
@@ -170,7 +170,8 @@ def get_categories():
 @app.route("/category_type/<category_id>/")
 def category_type(category_id):
     recipes = mongo.db.recipes.find({"category_name": (category_id)})
-    return render_template("category_type.html", recipes=recipes, category_id=category_id)
+    return render_template("category_type.html",
+                        recipes=recipes, category_id=category_id)
 
 
 @app.route("/add_category", methods=["GET", "POST"])
