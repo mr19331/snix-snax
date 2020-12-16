@@ -25,6 +25,8 @@ Commission can also be earned from adding an ingredient shopping list for popula
 
 ![]<img src="https://res.cloudinary.com/mr19331/image/upload/v1608022891/Project-Flow-Diagram_pqazqt.png" style="zoom:150%;" />
 
+### Table of Contents
+
 - [**Goals of the website**](#--goals-of-the-website--)
     + [User Goals](#user-goals)
     + [Site Owner Goals](#site-owner-goals)
@@ -45,7 +47,7 @@ Commission can also be earned from adding an ingredient shopping list for popula
   * [**Testing**](#--testing--)
 - [Security](#security)
     + [Authentication](#authentication)
-  * [**Bugs /Problems during project development****](#--bugs--problems-during-project-development----)
+  * [**Bugs /Problems during project development**](#--bugs--problems-during-project-development----)
 - [Deployment](#deployment)
 - [Credits](#credits)
   * [Content](#content)
@@ -438,10 +440,6 @@ Despite many efforts to correct this using CSS I still can't get the image to sh
 
 Problems with media queries  I planned to adjust the size of the text and search bar in the mobile version using media queries but because it seemed to cause problems with the main image, I rearranged the text and the search and reset buttons instead. 
    
-
-
-
-
 
 ## Deployment
 
